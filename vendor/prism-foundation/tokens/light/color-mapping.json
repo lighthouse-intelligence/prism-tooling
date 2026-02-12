@@ -1,0 +1,47 @@
+{
+  "color": {
+    "hero": {
+      "chart": {
+        "negative": {
+          "100": {
+            "$value": "{prism.color.general.critical.100}"
+          },
+          "200": {
+            "$value": "{prism.color.general.critical.200}"
+          }
+        },
+        "positive": {
+          "100": {
+            "$value": "{prism.color.general.success.100}"
+          },
+          "200": {
+            "$value": "{prism.color.general.success.200}"
+          }
+        }
+      }
+    },
+    "parity": {
+      "loss": {
+        "dark": {
+          "$value": "{prism.color.general.critical.400}"
+        },
+        "light": {
+          "$value": "{prism.color.general.critical.300}"
+        }
+      },
+      "meet": {
+        "dark": {
+          "$value": "{prism.color.general.info.400}"
+        },
+        "light": {
+          "$value": "{prism.color.general.info.300}"
+        }
+      },
+      "win": {
+        "light": {
+          "$value": "{prism.color.general.warning.300}"
+        }
+      }
+    }
+  }
+}

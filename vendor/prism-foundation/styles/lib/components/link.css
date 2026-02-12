@@ -1,0 +1,113 @@
+.prism-link {
+  align-items: center;
+  color: var(--prism-color-interactive-text-primary-idle);
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: var(--prism-typography-text-300-medium-font-weight);
+  gap: var(--prism-spacing-100);
+  text-decoration: underline;
+}
+
+.prism-link:disabled,
+.prism-link--disabled,
+.prism-link[data-test-pseudo="disabled"] {
+  color: var(--prism-color-interactive-text-disabled);
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.prism-link:focus-visible,
+.prism-link[data-test-pseudo="focus"] {
+  border-radius: 2px;
+  outline: 2px solid var(--prism-color-interactive-border-focus);
+  outline-offset: -1px; /* Added so the outline is never covered by siblings or parents */
+}
+
+.prism-link:hover:not(
+    :disabled,
+    .prism-link--disabled,
+    [data-test-pseudo="disabled"]
+  ),
+.prism-link[data-test-pseudo="hover"]:not(
+    :disabled,
+    .prism-link--disabled,
+    [data-test-pseudo="disabled"]
+  ) {
+  color: var(--prism-color-interactive-text-primary-hover);
+  text-decoration: underline;
+}
+
+.prism-link:active:not(
+    :disabled,
+    .prism-link--disabled,
+    [data-test-pseudo="disabled"]
+  ),
+.prism-link[data-test-pseudo="active"]:not(
+    :disabled,
+    .prism-link--disabled,
+    [data-test-pseudo="disabled"]
+  ) {
+  color: var(--prism-color-interactive-text-primary-pressed);
+  text-decoration: underline;
+}
+
+.prism-link.prism-link--standalone {
+  font-size: var(--prism-typography-text-300-medium-font-size);
+  font-weight: var(--prism-typography-text-300-medium-font-weight);
+  line-height: var(--prism-typography-text-300-medium-line-height);
+  text-decoration: none;
+}
+
+.prism-link.prism-link--small {
+  font-size: var(--prism-typography-text-200-medium-font-size);
+  font-weight: var(--prism-typography-text-200-medium-font-weight);
+  line-height: var(--prism-typography-text-200-medium-line-height);
+}
+
+.prism-link.prism-link--medium {
+  font-size: var(--prism-typography-text-300-medium-font-size);
+  font-weight: var(--prism-typography-text-300-medium-font-weight);
+  line-height: var(--prism-typography-text-300-medium-line-height);
+}
+
+.prism-link.prism-link--large {
+  font-size: var(--prism-typography-text-400-medium-font-size);
+  font-weight: var(--prism-typography-text-400-medium-font-weight);
+  line-height: var(--prism-typography-text-400-medium-line-height);
+}
+
+.prism-link.prism-link--secondary {
+  color: var(--prism-color-interactive-text-secondary-idle);
+}
+
+.prism-link.prism-link--secondary:disabled,
+.prism-link--disabled.prism-link--secondary,
+.prism-link.prism-link--secondary[data-test-pseudo="disabled"] {
+  color: var(--prism-color-interactive-text-disabled);
+}
+
+.prism-link.prism-link--secondary:hover:not(
+    :disabled,
+    .prism-link--disabled,
+    [data-test-pseudo="disabled"]
+  ),
+.prism-link.prism-link--secondary[data-test-pseudo="hover"]:not(
+    :disabled,
+    .prism-link--disabled,
+    [data-test-pseudo="disabled"]
+  ) {
+  color: var(--prism-color-interactive-text-secondary-hover);
+}
+
+.prism-link.prism-link--secondary:active:not(
+    :disabled,
+    .prism-link--disabled,
+    [data-test-pseudo="disabled"]
+  ),
+.prism-link.prism-link--secondary[data-test-pseudo="active"]:not(
+    :disabled,
+    .prism-link--disabled,
+    [data-test-pseudo="disabled"]
+  ) {
+  color: var(--prism-color-interactive-text-secondary-pressed);
+}

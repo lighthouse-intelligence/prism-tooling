@@ -1,0 +1,29 @@
+/* Generic modal styles that can be used across repositories */
+.modal {
+  --modal-max-width: 80vw;
+  --modal-max-height: 70vh;
+  --modal-min-width: 600px;
+}
+
+.modal--padded {
+  padding: var(--prism-spacing-500);
+}
+
+.modal--small {
+  width: 600px;
+}
+
+.modal--medium {
+  width: 800px;
+}
+
+.modal--stretched {
+  height: calc(
+    var(--modal-max-height) - 25px
+  ); /* Deduct 25px for vertical scrollbar */
+
+  min-width: var(--modal-min-width);
+  width: calc(
+    var(--modal-max-width) - 25px
+  ); /* Deduct 25px for vertical scrollbar */
+}

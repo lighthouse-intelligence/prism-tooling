@@ -1,0 +1,39 @@
+/**
+  * This file does not use native cascade layers, which is the recommended way of configuring Tailwind CSS.
+  * However, since we currently support !important overrides inside unlayer content, this does not work as expected.
+  * !important statements inside of layers take precedence over unlayered !important statements, making it impossible
+  * to override those styles without defining a preceding layer or overriding using the specific layer.
+  * Example:
+  *
+  * ```css
+  *   @layer theme, base, utilities, components;
+  *
+  *   // Contains classes like `flex`, `grid`, etc. Marking using !important.
+  *   @import "tailwindcss/utilities.css" @layer(utilities) source(none) important;
+  *
+  *.  // Our custom styles, which may contain !important overrides. The element could be `<div class="flex container" />`
+  *   .container {
+  *     display: block !important; // This will NOT override the `flex` class when using cascade layers.
+  *   }  
+  * ```
+  * 
+  * The only proper solution would be to get rid of important all together, but that requires a much bigger refactor.
+  * Since we also have styling that relies on Tailwind utility classes being marked as important.
+  * 
+  * @see https://github.com/tailwindlabs/tailwindcss/discussions/13188
+  * @see https://css-tricks.com/css-cascade-layers/#aa-establishing-a-layer-order
+  */
+
+/* stylelint-disable-next-line import-notation */
+@import "tailwindcss/theme.css";
+
+/* stylelint-disable-next-line import-notation, at-rule-prelude-no-invalid */
+@import "tailwindcss/utilities.css" source(none) important;
+
+/* Normally we should always import at the top, but that's apparently not possible and doesn't apply the styles correctly */
+/* stylelint-disable-next-line import-notation */
+@import "./prism-foundation.css";
+
+/* We still import the config for the theming variables, since this is backwards compatible and would require a bigger refactor */
+/* stylelint-disable-next-line at-rule-no-unknown */
+@config "../tailwind-config-shared.js";

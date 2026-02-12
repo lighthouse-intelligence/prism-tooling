@@ -1,0 +1,26 @@
+/* This file is generated on build */
+/* stylelint-disable-next-line import-notation */
+@import "./lib/tokens.css";
+
+/* stylelint-disable-next-line import-notation */
+@import "./lib/tokens.dark.css";
+
+/* stylelint-disable-next-line import-notation */
+@import "./lib/tokens.highcontrast-light.css";
+
+/* stylelint-disable-next-line import-notation */
+@import "./lib/tokens.highcontrast-dark.css";
+
+/* stylelint-disable-next-line import-notation */
+@import "./lib/reset.css";
+
+/* stylelint-disable-next-line import-notation */
+@import "./lib/typography.css";
+
+/* stylelint-disable-next-line import-notation */
+@import "./lib/components/index.css";
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}

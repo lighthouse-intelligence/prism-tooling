@@ -1,0 +1,24 @@
+.identifier-square {
+  border-radius: var(--border-radius-100);
+  height: 14px;
+  width: 14px;
+}
+
+.identifier-square.identifier-square--small {
+  height: 12px;
+  width: 12px;
+}
+
+.identifier-square.identifier-square--selected {
+  border: 1px solid var(--prism-color-border-inverse-emphasis);
+  height: 16px;
+  outline: 2px solid var(--prism-color-icon-neutral-emphasis);
+  width: 16px;
+}
+
+.identifier-square.identifier-square--selected.identifier-square--small {
+  border: 1px solid var(--prism-color-border-inverse-emphasis);
+  height: 14px;
+  outline: 2px solid var(--prism-color-icon-neutral-emphasis);
+  width: 14px;
+}

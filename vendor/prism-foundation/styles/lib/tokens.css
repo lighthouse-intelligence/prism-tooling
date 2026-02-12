@@ -1,0 +1,512 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --border-radius-50: 2px;
+  --border-radius-100: 4px;
+  --border-radius-200: 8px;
+  --border-radius-300: 12px;
+  --border-radius-400: 16px;
+  --border-radius-circle: 50%;
+  --border-radius-pill: 9999px;
+  --prism-color-chart-categorical-10: #00518b;
+  --prism-color-chart-categorical-11: #a37530;
+  --prism-color-chart-categorical-12: #fdd886;
+  --prism-color-chart-categorical-13: #7f67bf;
+  --prism-color-chart-categorical-14: #58be1d;
+  --prism-color-chart-categorical-15: #d7f8ae;
+  --prism-color-chart-categorical-16: #a1b4c5;
+  --prism-color-chart-categorical-17: #5cb9f4;
+  --prism-color-chart-categorical-18: #e13038;
+  --prism-color-chart-categorical-19: #1f3d57;
+  --prism-color-chart-categorical-20: #2c91d4;
+  --prism-color-chart-categorical-21: #ac5a03;
+  --prism-color-chart-categorical-01: #157bc1;
+  --prism-color-chart-categorical-02: #f9ad24;
+  --prism-color-chart-categorical-03: #f74f57;
+  --prism-color-chart-categorical-04: #c3b3e8;
+  --prism-color-chart-categorical-05: #94e1e3;
+  --prism-color-chart-categorical-06: #9a0165;
+  --prism-color-chart-categorical-07: #ff9da2;
+  --prism-color-chart-categorical-08: #4c657b;
+  --prism-color-chart-categorical-09: #a8e07e;
+  --prism-color-chart-sequential-critical-10: #a5191e;
+  --prism-color-chart-sequential-critical-11: #8a0f15;
+  --prism-color-chart-sequential-critical-01: #f9cdcd;
+  --prism-color-chart-sequential-critical-02: #fdb7b7;
+  --prism-color-chart-sequential-critical-03: #ffa1a0;
+  --prism-color-chart-sequential-critical-04: #ff8a88;
+  --prism-color-chart-sequential-critical-05: #ff6f6b;
+  --prism-color-chart-sequential-critical-06: #f85553;
+  --prism-color-chart-sequential-critical-07: #ea4041;
+  --prism-color-chart-sequential-critical-08: #d62e32;
+  --prism-color-chart-sequential-critical-09: #bf2227;
+  --prism-color-chart-sequential-info-10: #0e3ea9;
+  --prism-color-chart-sequential-info-11: #0b238e;
+  --prism-color-chart-sequential-info-01: #c8defc;
+  --prism-color-chart-sequential-info-02: #afd2fe;
+  --prism-color-chart-sequential-info-03: #92c4ff;
+  --prism-color-chart-sequential-info-04: #74b6ff;
+  --prism-color-chart-sequential-info-05: #57a5ff;
+  --prism-color-chart-sequential-info-06: #3e92fb;
+  --prism-color-chart-sequential-info-07: #2c7feb;
+  --prism-color-chart-sequential-info-08: #1f6bd8;
+  --prism-color-chart-sequential-info-09: #1456c3;
+  --prism-color-chart-sequential-intelligence-10: #602391;
+  --prism-color-chart-sequential-intelligence-11: #490070;
+  --prism-color-chart-sequential-intelligence-01: #e9e3ff;
+  --prism-color-chart-sequential-intelligence-02: #dcd0ff;
+  --prism-color-chart-sequential-intelligence-03: #cfbcff;
+  --prism-color-chart-sequential-intelligence-04: #c2a7ff;
+  --prism-color-chart-sequential-intelligence-05: #b491ff;
+  --prism-color-chart-sequential-intelligence-06: #a47bf6;
+  --prism-color-chart-sequential-intelligence-07: #9567e3;
+  --prism-color-chart-sequential-intelligence-08: #8552cb;
+  --prism-color-chart-sequential-intelligence-09: #743bae;
+  --prism-color-chart-sequential-neutral-10: #383b40;
+  --prism-color-chart-sequential-neutral-11: #1f2124;
+  --prism-color-chart-sequential-neutral-01: #e5e9ef;
+  --prism-color-chart-sequential-neutral-02: #d2d8e1;
+  --prism-color-chart-sequential-neutral-03: #c0c7d3;
+  --prism-color-chart-sequential-neutral-04: #adb6c2;
+  --prism-color-chart-sequential-neutral-05: #9ba3b0;
+  --prism-color-chart-sequential-neutral-06: #89919c;
+  --prism-color-chart-sequential-neutral-07: #767d87;
+  --prism-color-chart-sequential-neutral-08: #626871;
+  --prism-color-chart-sequential-neutral-09: #4e535a;
+  --prism-color-chart-sequential-success-10: #13663e;
+  --prism-color-chart-sequential-success-11: #0d5030;
+  --prism-color-chart-sequential-success-01: #c6f0d2;
+  --prism-color-chart-sequential-success-02: #9fe3b4;
+  --prism-color-chart-sequential-success-03: #75d998;
+  --prism-color-chart-sequential-success-04: #68d190;
+  --prism-color-chart-sequential-success-05: #46c47d;
+  --prism-color-chart-sequential-success-06: #37b370;
+  --prism-color-chart-sequential-success-07: #2aa163;
+  --prism-color-chart-sequential-success-08: #1f8954;
+  --prism-color-chart-sequential-success-09: #1a7b4b;
+  --prism-color-chart-sequential-warning-10: #935e05;
+  --prism-color-chart-sequential-warning-11: #7a500d;
+  --prism-color-chart-sequential-warning-01: #ffedc6;
+  --prism-color-chart-sequential-warning-02: #fedc9d;
+  --prism-color-chart-sequential-warning-03: #ffc974;
+  --prism-color-chart-sequential-warning-04: #ffb44a;
+  --prism-color-chart-sequential-warning-05: #f9a10c;
+  --prism-color-chart-sequential-warning-06: #e99201;
+  --prism-color-chart-sequential-warning-07: #d68400;
+  --prism-color-chart-sequential-warning-08: #c07800;
+  --prism-color-chart-sequential-warning-09: #aa6b00;
+  --prism-color-elevation-backdrop-default: rgba(46, 61, 75, 0.72); /** Use for overlay backdrops (e.g., modals, dialogs) over underlying content. */
+  --prism-color-elevation-backdrop-inverse: rgba(255, 255, 255, 0.72); /** Use for light overlay backdrops (e.g., modals, dialogs) over underlying content. */
+  --prism-color-general-alpha-info-50: rgba(5, 143, 255, 0.08);
+  --prism-color-general-alpha-info-100: rgba(0, 130, 255, 0.2);
+  --prism-color-general-alpha-info-200: rgba(7, 137, 255, 0.33);
+  --prism-color-general-alpha-info-300: rgba(3, 131, 255, 0.5);
+  --prism-color-general-alpha-info-400: rgba(0, 120, 255, 0.66);
+  --prism-color-general-alpha-intelligence-50: rgba(88, 38, 255, 0.06);
+  --prism-color-general-alpha-intelligence-100: rgba(55, 1, 255, 0.13);
+  --prism-color-general-alpha-intelligence-200: rgba(65, 7, 255, 0.21);
+  --prism-color-general-alpha-intelligence-300: rgba(74, 5, 255, 0.32);
+  --prism-color-general-alpha-intelligence-400: rgba(79, 3, 255, 0.42);
+  --prism-color-general-alpha-inverse-50: rgba(255, 255, 255, 0.2);
+  --prism-color-general-alpha-inverse-100: rgba(255, 255, 255, 0.32);
+  --prism-color-general-alpha-inverse-200: rgba(255, 255, 255, 0.48);
+  --prism-color-general-alpha-inverse-300: rgba(255, 255, 255, 0.64);
+  --prism-color-general-alpha-inverse-400: rgba(255, 255, 255, 0.72);
+  --prism-color-general-alpha-neutral-50: rgba(22, 55, 88, 0.03);
+  --prism-color-general-alpha-neutral-100: rgba(5, 38, 105, 0.06);
+  --prism-color-general-alpha-neutral-200: rgba(19, 46, 110, 0.11);
+  --prism-color-general-alpha-neutral-300: rgba(11, 36, 86, 0.16);
+  --prism-color-general-alpha-neutral-400: rgba(5, 30, 72, 0.24);
+  --prism-color-general-alpha-neutral-00: rgba(22, 55, 88, 0);
+  --prism-color-general-brand-50: #fff6ea;
+  --prism-color-general-brand-100: #ffe6d7;
+  --prism-color-general-brand-200: #fed9c3;
+  --prism-color-general-brand-300: #feb488;
+  --prism-color-general-brand-400: #fd9b60;
+  --prism-color-general-brand-500: #fd8237;
+  --prism-color-general-brand-600: #ec470a;
+  --prism-color-general-brand-700: #bc2d0d;
+  --prism-color-general-brand-800: #912911;
+  --prism-color-general-brand-900: #6b2211;
+  --prism-color-general-brand-950: #140806;
+  --prism-color-general-critical-50: #fff0ee;
+  --prism-color-general-critical-100: #ffdad6;
+  --prism-color-general-critical-200: #ffc5c0;
+  --prism-color-general-critical-300: #ffa399;
+  --prism-color-general-critical-400: #fe8276;
+  --prism-color-general-critical-500: #f96657;
+  --prism-color-general-critical-600: #cd1c07;
+  --prism-color-general-critical-700: #a12113;
+  --prism-color-general-critical-800: #7d2119;
+  --prism-color-general-critical-900: #611711;
+  --prism-color-general-critical-950: #450c08;
+  --prism-color-general-info-50: #ebf6ff;
+  --prism-color-general-info-100: #cce6ff;
+  --prism-color-general-info-200: #add8ff;
+  --prism-color-general-info-300: #81c1ff;
+  --prism-color-general-info-400: #5eaaff;
+  --prism-color-general-info-500: #4297ff;
+  --prism-color-general-info-600: #125fe3;
+  --prism-color-general-info-700: #1549c1;
+  --prism-color-general-info-800: #0d39a0;
+  --prism-color-general-info-900: #0b238e;
+  --prism-color-general-info-950: #061567;
+  --prism-color-general-intelligence-50: #f5f2ff; /** AI and Automation */
+  --prism-color-general-intelligence-100: #e5deff; /** AI and Automation */
+  --prism-color-general-intelligence-200: #d7cbff; /** AI and Automation */
+  --prism-color-general-intelligence-300: #c5afff; /** AI and Automation */
+  --prism-color-general-intelligence-400: #b595ff; /** AI and Automation */
+  --prism-color-general-intelligence-500: #a87eff; /** AI and Automation */
+  --prism-color-general-intelligence-600: #7f31fd; /** AI and Automation */
+  --prism-color-general-intelligence-700: #6a0be1; /** AI and Automation */
+  --prism-color-general-intelligence-800: #5816a9; /** AI and Automation */
+  --prism-color-general-intelligence-900: #441280; /** AI and Automation */
+  --prism-color-general-intelligence-950: #2d0c5a; /** AI and Automation */
+  --prism-color-general-neutral-50: #f9fafb;
+  --prism-color-general-neutral-100: #f2f4f8;
+  --prism-color-general-neutral-200: #e6e9ef;
+  --prism-color-general-neutral-300: #dbe0e6;
+  --prism-color-general-neutral-400: #c7ced6;
+  --prism-color-general-neutral-500: #a8b0bd;
+  --prism-color-general-neutral-600: #66768a;
+  --prism-color-general-neutral-700: #52647a;
+  --prism-color-general-neutral-800: #44586d;
+  --prism-color-general-neutral-900: #2e3d4b;
+  --prism-color-general-neutral-950: #1f2124;
+  --prism-color-general-neutral-00: #ffffff;
+  --prism-color-general-success-50: #e2f9e9;
+  --prism-color-general-success-100: #beedcc;
+  --prism-color-general-success-200: #98e3b3;
+  --prism-color-general-success-300: #5bd18d;
+  --prism-color-general-success-400: #28be6d;
+  --prism-color-general-success-500: #1bab60;
+  --prism-color-general-success-600: #0e7744;
+  --prism-color-general-success-700: #0e6039;
+  --prism-color-general-success-800: #0c4c2f;
+  --prism-color-general-success-900: #093a24;
+  --prism-color-general-success-950: #052718;
+  --prism-color-general-warning-50: #fff2d5;
+  --prism-color-general-warning-100: #ffde96;
+  --prism-color-general-warning-200: #ffca66;
+  --prism-color-general-warning-300: #ffa926;
+  --prism-color-general-warning-400: #fc8907;
+  --prism-color-general-warning-500: #ef7204;
+  --prism-color-general-warning-600: #b83f06;
+  --prism-color-general-warning-700: #97300c;
+  --prism-color-general-warning-800: #79270d;
+  --prism-color-general-warning-900: #5e1c05;
+  --prism-color-general-warning-950: #421102;
+  --prism-shadow-brand-100: rgba(145, 41, 17, 0.1) 0px 1px 3px 0px, rgba(145, 41, 17, 0.08) 0px 1px 2px 0px;
+  --prism-shadow-brand-200: rgba(145, 41, 17, 0.2) 0px 8px 16px -4px, rgba(145, 41, 17, 0.06) 0px 4px 4px -2px;
+  --prism-shadow-brand-300: rgba(145, 41, 17, 0.28) 0px 24px 48px -12px;
+  --prism-shadow-brand-inset: rgba(145, 41, 17, 0.16) 0px 2px 4px 0px inset;
+  --prism-shadow-neutral-100: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px;
+  --prism-shadow-neutral-200: rgba(0, 0, 0, 0.08) 0px 8px 12px -4px, rgba(0, 0, 0, 0.04) 0px 4px 4px -2px;
+  --prism-shadow-neutral-300: rgba(0, 0, 0, 0.24) 0px 24px 48px -12px;
+  --prism-shadow-neutral-inset: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset;
+  --prism-shadow-reverse-neutral-200: rgba(0, 0, 0, 0.08) 0px 8px 12px -4px, rgba(0, 0, 0, 0.04) 0px 4px 4px -2px;
+  --prism-internal-typography-bold-font-weight: 700;
+  --prism-internal-typography-medium-font-weight: 500;
+  --prism-internal-typography-regular-font-weight: 400;
+  --prism-internal-typography-semi-bold-font-weight: 600;
+  --prism-typography-default-font-family: 'Inter', sans-serif;
+  --prism-typography-heading-1-font-size: 28px;
+  --prism-typography-heading-1-line-height: 36px;
+  --prism-typography-heading-2-font-size: 20px;
+  --prism-typography-heading-2-line-height: 28px;
+  --prism-typography-heading-3-font-size: 16px;
+  --prism-typography-heading-3-line-height: 24px;
+  --prism-typography-heading-4-font-size: 14px;
+  --prism-typography-heading-4-line-height: 20px;
+  --prism-typography-paragraph-200-regular-font-size: 12px;
+  --prism-typography-paragraph-200-regular-line-height: 18px;
+  --prism-typography-paragraph-300-regular-font-size: 14px;
+  --prism-typography-paragraph-300-regular-line-height: 20px;
+  --prism-typography-paragraph-400-regular-font-size: 16px;
+  --prism-typography-paragraph-400-regular-line-height: 24px;
+  --prism-typography-text-200-regular-font-size: 12px;
+  --prism-typography-text-200-regular-line-height: 16px;
+  --prism-typography-text-300-regular-font-size: 14px;
+  --prism-typography-text-300-regular-line-height: 18px;
+  --prism-typography-text-400-regular-font-size: 16px;
+  --prism-typography-text-400-regular-line-height: 20px;
+  --prism-typography-text-500-regular-font-size: 20px;
+  --prism-typography-text-500-regular-line-height: 24px;
+  --prism-spacing-0: 0;
+  --prism-spacing-50: 2px;
+  --prism-spacing-100: 4px;
+  --prism-spacing-200: 8px;
+  --prism-spacing-300: 12px;
+  --prism-spacing-400: 16px;
+  --prism-spacing-500: 20px;
+  --prism-spacing-600: 24px;
+  --prism-spacing-700: 28px;
+  --prism-spacing-800: 32px;
+  --prism-spacing-900: 36px;
+  --prism-spacing-1000: 40px;
+  --gradient-brand-background: radial-gradient( 10560.62% 249.13% at 0.12% 5.08%, #fff1e0 0%, #ffebeb 55.21%, #fefbf5 100% );
+  --gradient-brand-figure: linear-gradient(90deg, #fd8a44 0%, #ec470a 100%);
+  --shadow-color-default: 210deg 5% 76%;
+  --prism-color-background-critical-default: var(--prism-color-general-critical-100); /** Use for critical badge backgrounds. Pair with color-text-critical-emphasis and color-icon-critical-emphasis. */
+  --prism-color-background-critical-subdued: var(--prism-color-general-critical-50); /** Use for critical message backgrounds. */
+  --prism-color-background-info-default: var(--prism-color-general-info-100); /** Use for informational badge backgrounds. Pair with color-text-info-emphasis and color-icon-info-emphasis. */
+  --prism-color-background-info-subdued: var(--prism-color-general-info-50); /** Use for informational message backgrounds. */
+  --prism-color-background-inverse: var(--prism-color-general-neutral-900); /** Use for high-contrast backgrounds. */
+  --prism-color-background-neutral-default: var(--prism-color-general-neutral-200); /** Use for neutral badge backgrounds. Pair with color-text-neutral-emphasis and color-icon-neutral-emphasis. */
+  --prism-color-background-neutral-subdued: var(--prism-color-general-neutral-50); /** Use for layered surface backgrounds, such as table headers. */
+  --prism-color-background-success-default: var(--prism-color-general-success-100); /** Use for success badge backgrounds. Pair with color-text-success-emphasis and color-icon-success-emphasis. */
+  --prism-color-background-success-subdued: var(--prism-color-general-success-50); /** Use for success message backgrounds. */
+  --prism-color-background-warning-default: var(--prism-color-general-warning-100); /** Use for warning badge backgrounds. Pair with color-text-warning-emphasis and color-icon-warning-emphasis. */
+  --prism-color-background-warning-subdued: var(--prism-color-general-warning-50); /** Use for warning message backgrounds. */
+  --prism-color-border-brand-default: var(--prism-color-general-brand-200); /** Use for brand message borders. */
+  --prism-color-border-brand-emphasis: var(--prism-color-general-brand-500); /** Use for emphasized brand message borders. */
+  --prism-color-border-critical-default: var(--prism-color-general-critical-200); /** Use for critical message borders. */
+  --prism-color-border-critical-emphasis: var(--prism-color-general-critical-500); /** Use for emphasized critical message borders. */
+  --prism-color-border-info-default: var(--prism-color-general-info-200); /** Use for informational message borders. */
+  --prism-color-border-info-emphasis: var(--prism-color-general-info-500); /** Use for emphasized informational message borders. */
+  --prism-color-border-intelligence-default: var(--prism-color-general-intelligence-200); /** Use for intelligence message borders. */
+  --prism-color-border-intelligence-emphasis: var(--prism-color-general-intelligence-500); /** Use for emphasized intelligence message borders. */
+  --prism-color-border-inverse-default: var(--prism-color-general-alpha-inverse-200); /** Use for borders on a inverse background */
+  --prism-color-border-inverse-emphasis: var(--prism-color-general-neutral-00); /** Use for borders between high-contrast elements, such as chart figures. */
+  --prism-color-border-neutral-default: var(--prism-color-general-neutral-200); /** Use for borders between grouped UI elements, such as cards. */
+  --prism-color-border-neutral-emphasis: var(--prism-color-general-neutral-300); /** Use for borders between grouped elements and section headers. */
+  --prism-color-border-success-default: var(--prism-color-general-success-200); /** Use for success message borders. */
+  --prism-color-border-success-emphasis: var(--prism-color-general-success-500); /** Use for emphasized success message borders. */
+  --prism-color-border-warning-default: var(--prism-color-general-warning-200); /** Use for warning message borders. */
+  --prism-color-border-warning-emphasis: var(--prism-color-general-warning-500); /** Use for emphasized warning message borders. */
+  --prism-color-chart-accent-primary-figure-default: var(--prism-color-chart-sequential-info-09);
+  --prism-color-chart-accent-primary-figure-emphasis: var(--prism-color-chart-sequential-info-10);
+  --prism-color-chart-accent-primary-figure-subdued: var(--prism-color-chart-sequential-info-04);
+  --prism-color-chart-accent-secondary-figure-default: var(--prism-color-chart-sequential-neutral-09);
+  --prism-color-chart-accent-secondary-figure-emphasis: var(--prism-color-chart-sequential-neutral-10);
+  --prism-color-chart-accent-secondary-figure-subdued: var(--prism-color-chart-sequential-neutral-04);
+  --prism-color-chart-demand-background-elevated: var(--prism-color-chart-sequential-critical-01);
+  --prism-color-chart-demand-background-high: var(--prism-color-chart-sequential-critical-03);
+  --prism-color-chart-demand-background-low: var(--prism-color-chart-sequential-info-03);
+  --prism-color-chart-demand-background-normal: var(--prism-color-chart-sequential-info-01);
+  --prism-color-chart-demand-background-very-high: var(--prism-color-chart-sequential-critical-05);
+  --prism-color-chart-demand-background-very-low: var(--prism-color-chart-sequential-info-05);
+  --prism-color-chart-demand-figure-elevated: var(--prism-color-chart-sequential-critical-01);
+  --prism-color-chart-demand-figure-high: var(--prism-color-chart-sequential-critical-03);
+  --prism-color-chart-demand-figure-low: var(--prism-color-chart-sequential-info-03);
+  --prism-color-chart-demand-figure-normal: var(--prism-color-chart-sequential-info-01);
+  --prism-color-chart-demand-figure-very-high: var(--prism-color-chart-sequential-critical-05);
+  --prism-color-chart-demand-figure-very-low: var(--prism-color-chart-sequential-info-05);
+  --prism-color-chart-info-background-high-default: var(--prism-color-chart-sequential-info-08);
+  --prism-color-chart-info-background-high-emphasis: var(--prism-color-chart-sequential-info-09);
+  --prism-color-chart-info-background-low-default: var(--prism-color-chart-sequential-info-01);
+  --prism-color-chart-info-background-low-emphasis: var(--prism-color-chart-sequential-info-02);
+  --prism-color-chart-info-background-normal-default: var(--prism-color-chart-sequential-info-04);
+  --prism-color-chart-info-background-normal-emphasis: var(--prism-color-chart-sequential-info-05);
+  --prism-color-chart-info-figure-high: var(--prism-color-chart-sequential-info-09);
+  --prism-color-chart-info-figure-low: var(--prism-color-chart-sequential-info-02);
+  --prism-color-chart-info-figure-normal: var(--prism-color-chart-sequential-info-05);
+  --prism-color-chart-info-figure-very-high: var(--prism-color-chart-sequential-info-11);
+  --prism-color-chart-intelligence-background-high-default: var(--prism-color-chart-sequential-intelligence-06);
+  --prism-color-chart-intelligence-background-high-emphasis: var(--prism-color-chart-sequential-intelligence-07);
+  --prism-color-chart-intelligence-background-low-default: var(--prism-color-chart-sequential-intelligence-01);
+  --prism-color-chart-intelligence-background-low-emphasis: var(--prism-color-chart-sequential-intelligence-02);
+  --prism-color-chart-intelligence-background-normal-default: var(--prism-color-chart-sequential-intelligence-03);
+  --prism-color-chart-intelligence-background-normal-emphasis: var(--prism-color-chart-sequential-intelligence-04);
+  --prism-color-chart-intelligence-figure-high: var(--prism-color-chart-sequential-intelligence-09);
+  --prism-color-chart-intelligence-figure-low: var(--prism-color-chart-sequential-intelligence-02);
+  --prism-color-chart-intelligence-figure-normal: var(--prism-color-chart-sequential-intelligence-06);
+  --prism-color-chart-neutral-background-empty: var(--prism-color-chart-sequential-neutral-01);
+  --prism-color-chart-neutral-figure-empty: var(--prism-color-chart-sequential-neutral-03);
+  --prism-color-chart-status-background-critical-default: var(--prism-color-chart-sequential-critical-03);
+  --prism-color-chart-status-background-critical-emphasis: var(--prism-color-chart-sequential-critical-04);
+  --prism-color-chart-status-background-success-default: var(--prism-color-chart-sequential-success-02);
+  --prism-color-chart-status-background-success-emphasis: var(--prism-color-chart-sequential-success-03);
+  --prism-color-chart-status-background-warning-default: var(--prism-color-chart-sequential-warning-03);
+  --prism-color-chart-status-background-warning-emphasis: var(--prism-color-chart-sequential-warning-04);
+  --prism-color-chart-status-figure-critical-normal: var(--prism-color-chart-sequential-critical-08);
+  --prism-color-chart-status-figure-critical-low: var(--prism-color-chart-sequential-critical-05);
+  --prism-color-chart-status-figure-intelligence-normal: var(--prism-color-chart-sequential-intelligence-05);
+  --prism-color-chart-status-figure-intelligence-low: var(--prism-color-chart-sequential-intelligence-02);
+  --prism-color-chart-status-figure-success-normal: var(--prism-color-chart-sequential-success-05);
+  --prism-color-chart-status-figure-success-low: var(--prism-color-chart-sequential-success-02);
+  --prism-color-chart-status-figure-warning-normal: var(--prism-color-chart-sequential-warning-05);
+  --prism-color-chart-status-figure-warning-low: var(--prism-color-chart-sequential-warning-02);
+  --prism-color-elevation-canvas: var(--prism-color-general-neutral-100); /** Use for application background. */
+  --prism-color-elevation-surface: var(--prism-color-general-neutral-00); /** Use for content backgrounds (e.g., cards). */
+  --prism-color-icon-brand-default: var(--prism-color-general-brand-500); /** Use for brand icon color. */
+  --prism-color-icon-brand-emphasis: var(--prism-color-general-brand-600); /** Use for emphasized brand icon color. Pair with color-text-brand-emphasis. */
+  --prism-color-icon-critical-default: var(--prism-color-general-critical-500); /** Use for critical icon color. */
+  --prism-color-icon-critical-emphasis: var(--prism-color-general-critical-600); /** Use for emphasized critical icon color. Pair with color-text-critical-emphasis. */
+  --prism-color-icon-info-default: var(--prism-color-general-info-500); /** Use for informational icon color. */
+  --prism-color-icon-info-emphasis: var(--prism-color-general-info-600); /** Use for emphasized informational icon color. Pair with color-text-info-emphasis. */
+  --prism-color-icon-intelligence-default: var(--prism-color-general-intelligence-500); /** Use for intelligence icon color. */
+  --prism-color-icon-intelligence-emphasis: var(--prism-color-general-intelligence-600); /** Use for emphasized intelligence icon color. Pair with color-text-intelligence-emphasis. */
+  --prism-color-icon-inverse: var(--prism-color-general-neutral-00); /** Use for icons on inverted backgrounds. */
+  --prism-color-icon-neutral-default: var(--prism-color-general-neutral-800); /** Use for default icon color. */
+  --prism-color-icon-neutral-emphasis: var(--prism-color-general-neutral-900); /** Use for emphasized icon color. */
+  --prism-color-icon-neutral-subdued: var(--prism-color-general-neutral-600); /** Use for secondary icon color. */
+  --prism-color-icon-success-default: var(--prism-color-general-success-500); /** Use for success icon color. */
+  --prism-color-icon-success-emphasis: var(--prism-color-general-success-600); /** Use for emphasized success icon color. Pair with color-text-info-success. */
+  --prism-color-icon-warning-default: var(--prism-color-general-warning-500); /** Use for warning icon color. */
+  --prism-color-icon-warning-emphasis: var(--prism-color-general-warning-800); /** Use for warning informational icon color. Pair with color-text-info-warning. */
+  --prism-color-interactive-background-critical-hover: var(--prism-color-general-critical-700); /** Use for hover background of critical interactive elements. */
+  --prism-color-interactive-background-critical-idle: var(--prism-color-general-critical-600); /** Use for idle background of critical interactive elements. */
+  --prism-color-interactive-background-critical-pressed: var(--prism-color-general-critical-800); /** Use for pressed background of critical interactive elements. */
+  --prism-color-interactive-background-disabled: var(--prism-color-general-alpha-neutral-200); /** Use for disabled interactive background. */
+  --prism-color-interactive-background-ghost-hover: var(--prism-color-general-alpha-neutral-100); /** Use for hover background of tertiary interactive elements, such as icon buttons. */
+  --prism-color-interactive-background-ghost-idle: var(--prism-color-general-alpha-neutral-00); /** Use for idle background of tertiary interactive elements, such as icon buttons. */
+  --prism-color-interactive-background-ghost-pressed: var(--prism-color-general-alpha-neutral-200); /** Use for pressed background of tertiary interactive elements, such as icon buttons. */
+  --prism-color-interactive-background-ghost-selected: var(--prism-color-general-alpha-info-50); /** Use for pressed background of tertiary interactive elements, such as icon buttons. */
+  --prism-color-interactive-background-inverse-hover: var(--prism-color-general-alpha-inverse-100); /** Use for hover background for elements on a inverse background. */
+  --prism-color-interactive-background-inverse-idle: var(--prism-color-general-alpha-inverse-50); /** Use for idle background for elements on a inverse background. */
+  --prism-color-interactive-background-inverse-pressed: var(--prism-color-general-alpha-inverse-200); /** Use for pressed background for elements on a inverse background. */
+  --prism-color-interactive-background-primary-hover: var(--prism-color-general-info-700); /** Use for hover background of primary interactive elements. */
+  --prism-color-interactive-background-primary-idle: var(--prism-color-general-info-600); /** Use for idle background of primary interactive elements. */
+  --prism-color-interactive-background-primary-pressed: var(--prism-color-general-info-800); /** Use for pressed background of primary interactive elements. */
+  --prism-color-interactive-background-primary-selected: var(--prism-color-general-info-800); /** Use for selected background of primary interactive elements. */
+  --prism-color-interactive-background-secondary-hover: var(--prism-color-general-alpha-neutral-200); /** Use for hover background of secondary interactive elements. */
+  --prism-color-interactive-background-secondary-idle: var(--prism-color-general-alpha-neutral-100); /** Use for idle background of secondary interactive elements. */
+  --prism-color-interactive-background-secondary-pressed: var(--prism-color-general-alpha-neutral-300); /** Use for pressed background of secondary interactive elements. */
+  --prism-color-interactive-background-secondary-selected: var(--prism-color-general-alpha-info-50); /** Use for selected background of secondary interactive elements. */
+  --prism-color-interactive-background-success-hover: var(--prism-color-general-success-700); /** Use for hover background of success interactive elements. */
+  --prism-color-interactive-background-success-idle: var(--prism-color-general-success-600); /** Use for idle background of success interactive elements. */
+  --prism-color-interactive-background-success-pressed: var(--prism-color-general-success-800); /** Use for pressed background of success interactive elements. */
+  --prism-color-interactive-background-warning-hover: var(--prism-color-general-warning-300); /** Use for hover background of warning interactive elements. */
+  --prism-color-interactive-background-warning-idle: var(--prism-color-general-warning-200); /** Use for idle background of warning interactive elements. */
+  --prism-color-interactive-background-warning-pressed: var(--prism-color-general-warning-400); /** Use for pressed background of warning interactive elements. */
+  --prism-color-interactive-border-critical-hover: var(--prism-color-general-critical-700); /** Use for hover border of critical interactive elements, such as input errors. */
+  --prism-color-interactive-border-critical-idle: var(--prism-color-general-critical-600); /** Use for idle border of critical interactive elements, such as input errors. */
+  --prism-color-interactive-border-critical-pressed: var(--prism-color-general-critical-800); /** Use for pressed border of critical interactive elements, such as input errors. */
+  --prism-color-interactive-border-focus: var(--prism-color-general-info-500); /** Use for focus ring around interactive elements. */
+  --prism-color-interactive-border-neutral-hover: var(--prism-color-general-neutral-500); /** Use for hover border of interactive elements, such as inputs. */
+  --prism-color-interactive-border-neutral-idle: var(--prism-color-general-neutral-400); /** Use for idle border of interactive elements, such as inputs. */
+  --prism-color-interactive-border-neutral-pressed: var(--prism-color-general-neutral-600); /** Use for pressed border of interactive elements, such as inputs. */
+  --prism-color-interactive-border-warning-hover: var(--prism-color-general-warning-500); /** Use for hover border of warning interactive elements, such as input warnings. */
+  --prism-color-interactive-border-warning-idle: var(--prism-color-general-warning-400); /** Use for idle border of warning interactive elements, such as input warnings. */
+  --prism-color-interactive-border-warning-pressed: var(--prism-color-general-warning-600); /** Use for pressed border of warning interactive elements, such as input warnings. */
+  --prism-color-interactive-icon-disabled: var(--prism-color-general-neutral-500); /** Use for icons in disabled interactive elements. */
+  --prism-color-interactive-text-disabled: var(--prism-color-general-neutral-500); /** Use for text in disabled interactive elements. */
+  --prism-color-interactive-text-placeholder: var(--prism-color-general-neutral-600); /** Use for placeholder text in form elements. */
+  --prism-color-interactive-text-primary-hover: var(--prism-color-general-info-700); /** Use for hover text of primary links. */
+  --prism-color-interactive-text-primary-idle: var(--prism-color-general-info-600); /** Use for idle text of primary links. */
+  --prism-color-interactive-text-primary-pressed: var(--prism-color-general-info-800); /** Use for pressed text of primary links. */
+  --prism-color-interactive-text-primary-selected: var(--prism-color-general-info-900); /** Use for selected text of primary links. */
+  --prism-color-interactive-text-secondary-hover: var(--prism-color-general-neutral-800); /** Use for hover text of secondary links. */
+  --prism-color-interactive-text-secondary-idle: var(--prism-color-general-neutral-900); /** Use for idle text of secondary links. */
+  --prism-color-interactive-text-secondary-pressed: var(--prism-color-general-neutral-950); /** Use for pressed text of secondary links. */
+  --prism-color-interactive-text-secondary-selected: var(--prism-color-general-neutral-950); /** Use for selected text of secondary links. */
+  --prism-color-text-brand-default: var(--prism-color-general-brand-600); /** Use for brand text. */
+  --prism-color-text-brand-emphasis: var(--prism-color-general-brand-950); /** Use for brand headers and high-contrast text. */
+  --prism-color-text-critical-default: var(--prism-color-general-critical-600); /** Use for critical text. */
+  --prism-color-text-critical-emphasis: var(--prism-color-general-critical-950); /** Use for critical headers and high-contrast text. */
+  --prism-color-text-info-default: var(--prism-color-general-info-600); /** Use for informational text. */
+  --prism-color-text-info-emphasis: var(--prism-color-general-info-950); /** Use for informational headers and high-contrast text. */
+  --prism-color-text-intelligence-default: var(--prism-color-general-intelligence-700); /** Use for intelligence text. */
+  --prism-color-text-intelligence-emphasis: var(--prism-color-general-intelligence-950); /** Use for intelligence headers and high-contrast text. */
+  --prism-color-text-inverse: var(--prism-color-general-neutral-00); /** Use for text on high-contrast backgrounds. */
+  --prism-color-text-neutral-default: var(--prism-color-general-neutral-900); /** Use for default text, such as body copy */
+  --prism-color-text-neutral-emphasis: var(--prism-color-general-neutral-950); /** Use for headers and high-contrast text. */
+  --prism-color-text-neutral-subdued: var(--prism-color-general-neutral-700); /** Use for secondary text. */
+  --prism-color-text-success-default: var(--prism-color-general-success-600); /** Use for success text. */
+  --prism-color-text-success-emphasis: var(--prism-color-general-success-950); /** Use for success headers and high-contrast text. */
+  --prism-color-text-warning-default: var(--prism-color-general-warning-500); /** Use for warning text. */
+  --prism-color-text-warning-emphasis: var(--prism-color-general-warning-950); /** Use for warning headers and high-contrast text. */
+  --prism-gradient-background-brand-default: linear-gradient(135deg, var(--prism-color-general-brand-100) 0%, var(--prism-color-general-brand-400) 100%);
+  --prism-gradient-background-brand-subdued: linear-gradient(135deg, var(--prism-color-general-brand-50) 0%, var(--prism-color-general-brand-300) 100%);
+  --prism-gradient-background-intelligence-default: linear-gradient(135deg, var(--prism-color-general-intelligence-100) 0%, var(--prism-color-general-intelligence-200) 100%);
+  --prism-gradient-background-intelligence-subdued: linear-gradient(135deg, var(--prism-color-general-intelligence-50) 0%, var(--prism-color-general-intelligence-100) 100%);
+  --prism-gradient-chart-intelligence-background-high: linear-gradient(135deg, var(--prism-color-general-critical-400) -20%, var(--prism-color-general-intelligence-700) 100%);
+  --prism-gradient-chart-intelligence-background-low: linear-gradient(135deg, var(--prism-color-general-neutral-100) -20%, var(--prism-color-general-intelligence-400) 100%);
+  --prism-gradient-chart-intelligence-background-normal: linear-gradient(135deg, var(--prism-color-general-critical-300) -20%, var(--prism-color-general-intelligence-500) 100%);
+  --prism-gradient-interactive-background-brand-primary-hover: linear-gradient(135deg, var(--prism-color-general-brand-600) 0%, var(--prism-color-general-brand-500) 100%);
+  --prism-gradient-interactive-background-brand-primary-idle: linear-gradient(135deg, var(--prism-color-general-brand-500) 0%, var(--prism-color-general-brand-600) 100%);
+  --prism-gradient-interactive-background-brand-primary-pressed: linear-gradient(135deg, var(--prism-color-general-brand-700) 0%, var(--prism-color-general-brand-600) 100%);
+  --prism-gradient-interactive-background-intelligence-primary-idle: linear-gradient(135deg, var(--prism-color-general-intelligence-500) -20%, var(--prism-color-interactive-background-primary-idle) 100%);
+  --prism-gradient-interactive-background-intelligence-secondary-idle: linear-gradient(135deg, var(--prism-color-general-intelligence-100) -20%, var(--prism-color-interactive-background-secondary-idle) 100%);
+  --prism-typography-heading-1-font-weight: var(--prism-internal-typography-bold-font-weight);
+  --prism-typography-heading-2-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-heading-3-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-heading-4-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-paragraph-200-bold-font-size: var(--prism-typography-paragraph-200-regular-font-size);
+  --prism-typography-paragraph-200-bold-font-weight: var(--prism-internal-typography-bold-font-weight);
+  --prism-typography-paragraph-200-bold-line-height: var(--prism-typography-paragraph-200-regular-line-height);
+  --prism-typography-paragraph-200-medium-font-size: var(--prism-typography-paragraph-200-regular-font-size);
+  --prism-typography-paragraph-200-medium-font-weight: var(--prism-internal-typography-medium-font-weight);
+  --prism-typography-paragraph-200-medium-line-height: var(--prism-typography-paragraph-200-regular-line-height);
+  --prism-typography-paragraph-200-regular-font-weight: var(--prism-internal-typography-regular-font-weight);
+  --prism-typography-paragraph-200-semi-bold-font-size: var(--prism-typography-paragraph-200-regular-font-size);
+  --prism-typography-paragraph-200-semi-bold-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-paragraph-200-semi-bold-line-height: var(--prism-typography-paragraph-200-regular-line-height);
+  --prism-typography-paragraph-300-bold-font-size: var(--prism-typography-paragraph-300-regular-font-size);
+  --prism-typography-paragraph-300-bold-font-weight: var(--prism-internal-typography-bold-font-weight);
+  --prism-typography-paragraph-300-bold-line-height: var(--prism-typography-paragraph-300-regular-line-height);
+  --prism-typography-paragraph-300-medium-font-size: var(--prism-typography-paragraph-300-regular-font-size);
+  --prism-typography-paragraph-300-medium-font-weight: var(--prism-internal-typography-medium-font-weight);
+  --prism-typography-paragraph-300-medium-line-height: var(--prism-typography-paragraph-300-regular-line-height);
+  --prism-typography-paragraph-300-regular-font-weight: var(--prism-internal-typography-regular-font-weight);
+  --prism-typography-paragraph-300-semi-bold-font-size: var(--prism-typography-paragraph-300-regular-font-size);
+  --prism-typography-paragraph-300-semi-bold-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-paragraph-300-semi-bold-line-height: var(--prism-typography-paragraph-300-regular-line-height);
+  --prism-typography-paragraph-400-bold-font-size: var(--prism-typography-paragraph-400-regular-font-size);
+  --prism-typography-paragraph-400-bold-font-weight: var(--prism-internal-typography-bold-font-weight);
+  --prism-typography-paragraph-400-bold-line-height: var(--prism-typography-paragraph-400-regular-line-height);
+  --prism-typography-paragraph-400-medium-font-size: var(--prism-typography-paragraph-400-regular-font-size);
+  --prism-typography-paragraph-400-medium-font-weight: var(--prism-internal-typography-medium-font-weight);
+  --prism-typography-paragraph-400-medium-line-height: var(--prism-typography-paragraph-400-regular-line-height);
+  --prism-typography-paragraph-400-regular-font-weight: var(--prism-internal-typography-regular-font-weight);
+  --prism-typography-paragraph-400-semi-bold-font-size: var(--prism-typography-paragraph-400-regular-font-size);
+  --prism-typography-paragraph-400-semi-bold-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-paragraph-400-semi-bold-line-height: var(--prism-typography-paragraph-400-regular-line-height);
+  --prism-typography-text-200-bold-font-size: var(--prism-typography-text-200-regular-font-size);
+  --prism-typography-text-200-bold-font-weight: var(--prism-internal-typography-bold-font-weight);
+  --prism-typography-text-200-bold-line-height: var(--prism-typography-text-200-regular-line-height);
+  --prism-typography-text-200-medium-font-size: var(--prism-typography-text-200-regular-font-size);
+  --prism-typography-text-200-medium-font-weight: var(--prism-internal-typography-medium-font-weight);
+  --prism-typography-text-200-medium-line-height: var(--prism-typography-text-200-regular-line-height);
+  --prism-typography-text-200-regular-font-weight: var(--prism-internal-typography-regular-font-weight);
+  --prism-typography-text-200-semi-bold-font-size: var(--prism-typography-text-200-regular-font-size);
+  --prism-typography-text-200-semi-bold-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-text-200-semi-bold-line-height: var(--prism-typography-text-200-regular-line-height);
+  --prism-typography-text-300-bold-font-size: var(--prism-typography-text-300-regular-font-size);
+  --prism-typography-text-300-bold-font-weight: var(--prism-internal-typography-bold-font-weight);
+  --prism-typography-text-300-bold-line-height: var(--prism-typography-text-300-regular-line-height);
+  --prism-typography-text-300-medium-font-size: var(--prism-typography-text-300-regular-font-size);
+  --prism-typography-text-300-medium-font-weight: var(--prism-internal-typography-medium-font-weight);
+  --prism-typography-text-300-medium-line-height: var(--prism-typography-text-300-regular-line-height);
+  --prism-typography-text-300-regular-font-weight: var(--prism-internal-typography-regular-font-weight);
+  --prism-typography-text-300-semi-bold-font-size: var(--prism-typography-text-300-regular-font-size);
+  --prism-typography-text-300-semi-bold-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-text-300-semi-bold-line-height: var(--prism-typography-text-300-regular-line-height);
+  --prism-typography-text-400-bold-font-size: var(--prism-typography-text-400-regular-font-size);
+  --prism-typography-text-400-bold-font-weight: var(--prism-internal-typography-bold-font-weight);
+  --prism-typography-text-400-bold-line-height: var(--prism-typography-text-400-regular-line-height);
+  --prism-typography-text-400-medium-font-size: var(--prism-typography-text-400-regular-font-size);
+  --prism-typography-text-400-medium-font-weight: var(--prism-internal-typography-medium-font-weight);
+  --prism-typography-text-400-medium-line-height: var(--prism-typography-text-400-regular-line-height);
+  --prism-typography-text-400-regular-font-weight: var(--prism-internal-typography-regular-font-weight);
+  --prism-typography-text-400-semi-bold-font-size: var(--prism-typography-text-400-regular-font-size);
+  --prism-typography-text-400-semi-bold-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-text-400-semi-bold-line-height: var(--prism-typography-text-400-regular-line-height);
+  --prism-typography-text-500-bold-font-size: var(--prism-typography-text-500-regular-font-size);
+  --prism-typography-text-500-bold-font-weight: var(--prism-internal-typography-bold-font-weight);
+  --prism-typography-text-500-bold-line-height: var(--prism-typography-text-500-regular-line-height);
+  --prism-typography-text-500-medium-font-size: var(--prism-typography-text-500-regular-font-size);
+  --prism-typography-text-500-medium-font-weight: var(--prism-internal-typography-medium-font-weight);
+  --prism-typography-text-500-medium-line-height: var(--prism-typography-text-500-regular-line-height);
+  --prism-typography-text-500-regular-font-weight: var(--prism-internal-typography-regular-font-weight);
+  --prism-typography-text-500-semi-bold-font-size: var(--prism-typography-text-500-regular-font-size);
+  --prism-typography-text-500-semi-bold-font-weight: var(--prism-internal-typography-semi-bold-font-weight);
+  --prism-typography-text-500-semi-bold-line-height: var(--prism-typography-text-500-regular-line-height);
+  --gradient-brand-100: linear-gradient( 90deg, var(--prism-color-general-brand-50) 0%, #ffefe7 104.1% );
+  --color-hero-chart-negative-100: var(--prism-color-general-critical-100);
+  --color-hero-chart-negative-200: var(--prism-color-general-critical-200);
+  --color-hero-chart-positive-100: var(--prism-color-general-success-100);
+  --color-hero-chart-positive-200: var(--prism-color-general-success-200);
+  --color-parity-loss-dark: var(--prism-color-general-critical-400);
+  --color-parity-loss-light: var(--prism-color-general-critical-300);
+  --color-parity-meet-dark: var(--prism-color-general-info-400);
+  --color-parity-meet-light: var(--prism-color-general-info-300);
+  --color-parity-win-light: var(--prism-color-general-warning-300);
+  --prism-gradient-interactive-background-intelligence-primary-hover: linear-gradient(135deg, var(--prism-color-interactive-background-primary-hover) 0%, var(--prism-color-general-intelligence-600) 120%);
+  --prism-gradient-interactive-background-intelligence-primary-pressed: linear-gradient(135deg, var(--prism-color-interactive-background-primary-pressed) 0%, var(--prism-color-general-intelligence-600) 120%);
+  --prism-gradient-interactive-background-intelligence-secondary-hover: linear-gradient(135deg, var(--prism-color-interactive-background-secondary-hover) 0%, var(--prism-color-general-alpha-intelligence-200) 120%);
+  --prism-gradient-interactive-background-intelligence-secondary-pressed: linear-gradient(135deg, var(--prism-color-interactive-background-secondary-pressed) 0%, var(--prism-color-general-alpha-intelligence-200) 120%);
+}

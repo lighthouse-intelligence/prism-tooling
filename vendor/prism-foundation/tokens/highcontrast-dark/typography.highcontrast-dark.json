@@ -1,0 +1,15 @@
+{
+  "prism": {
+    "internal": {
+      "typography": {
+        "bold": {
+          "font": {
+            "weight": {
+              "$value": "600"
+            }
+          }
+        }
+      }
+    }
+  }
+}

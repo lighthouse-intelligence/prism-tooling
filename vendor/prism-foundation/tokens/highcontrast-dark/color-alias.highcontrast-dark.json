@@ -1,0 +1,931 @@
+{
+  "prism": {
+    "color": {
+      "background": {
+        "critical": {
+          "default": {
+            "$description": "Use for critical badge backgrounds. Pair with color-text-critical-emphasis and color-icon-critical-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.critical.100}"
+          },
+          "subdued": {
+            "$description": "Use for critical message backgrounds.",
+            "$type": "color",
+            "$value": "{prism.color.general.critical.50}"
+          }
+        },
+        "info": {
+          "default": {
+            "$description": "Use for informational badge backgrounds. Pair with color-text-info-emphasis and color-icon-info-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.100}"
+          },
+          "subdued": {
+            "$description": "Use for informational message backgrounds.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.50}"
+          }
+        },
+        "inverse": {
+          "$description": "Use for high-contrast backgrounds.",
+          "$type": "color",
+          "$value": "{prism.color.general.neutral.900}"
+        },
+        "neutral": {
+          "default": {
+            "$description": "Use for neutral badge backgrounds. Pair with color-text-neutral-emphasis and color-icon-neutral-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.200}"
+          },
+          "subdued": {
+            "$description": "Use for layered surface backgrounds, such as table headers.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.00}"
+          }
+        },
+        "success": {
+          "default": {
+            "$description": "Use for success badge backgrounds. Pair with color-text-success-emphasis and color-icon-success-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.success.100}"
+          },
+          "subdued": {
+            "$description": "Use for success message backgrounds.",
+            "$type": "color",
+            "$value": "{prism.color.general.success.50}"
+          }
+        },
+        "warning": {
+          "default": {
+            "$description": "Use for warning badge backgrounds. Pair with color-text-warning-emphasis and color-icon-warning-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.warning.100}"
+          },
+          "subdued": {
+            "$description": "Use for warning message backgrounds.",
+            "$type": "color",
+            "$value": "{prism.color.general.warning.50}"
+          }
+        }
+      },
+      "border": {
+        "brand": {
+          "default": {
+            "$description": "Use for brand message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.brand.200}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized brand message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.brand.500}"
+          }
+        },
+        "critical": {
+          "default": {
+            "$description": "Use for critical message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.critical.200}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized critical message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.critical.500}"
+          }
+        },
+        "info": {
+          "default": {
+            "$description": "Use for informational message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.200}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized informational message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.500}"
+          }
+        },
+        "intelligence": {
+          "default": {
+            "$description": "Use for intelligence message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.intelligence.200}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized intelligence message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.intelligence.500}"
+          }
+        },
+        "inverse": {
+          "default": {
+            "$description": "Use for borders on a inverse background",
+            "$type": "color",
+            "$value": "{prism.color.general.alpha.inverse.200}"
+          },
+          "emphasis": {
+            "$description": "Use for borders between high-contrast elements, such as chart figures.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.00}"
+          }
+        },
+        "neutral": {
+          "default": {
+            "$description": "Use for borders between grouped UI elements, such as cards.",
+            "$type": "color",
+            "$value": "{prism.color.general.alpha.neutral.400}"
+          },
+          "emphasis": {
+            "$description": "Use for borders between grouped elements and section headers.",
+            "$type": "color",
+            "$value": "{prism.color.general.alpha.neutral.400}"
+          }
+        },
+        "success": {
+          "default": {
+            "$description": "Use for success message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.success.200}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized success message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.success.500}"
+          }
+        },
+        "warning": {
+          "default": {
+            "$description": "Use for warning message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.warning.200}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized warning message borders.",
+            "$type": "color",
+            "$value": "{prism.color.general.warning.500}"
+          }
+        }
+      },
+      "chart": {
+        "accent": {
+          "primary": {
+            "figure": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.08}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.10}"
+              },
+              "subdued": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.04}"
+              }
+            }
+          },
+          "secondary": {
+            "figure": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.neutral.09}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.neutral.10}"
+              },
+              "subdued": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.neutral.04}"
+              }
+            }
+          }
+        },
+        "demand": {
+          "background": {
+            "elevated": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.critical.01}"
+            },
+            "high": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.critical.03}"
+            },
+            "low": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.03}"
+            },
+            "normal": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.01}"
+            },
+            "very-high": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.critical.05}"
+            },
+            "very-low": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.05}"
+            }
+          },
+          "figure": {
+            "elevated": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.critical.01}"
+            },
+            "high": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.critical.03}"
+            },
+            "low": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.03}"
+            },
+            "normal": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.01}"
+            },
+            "very-high": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.critical.05}"
+            },
+            "very-low": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.05}"
+            }
+          }
+        },
+        "info": {
+          "background": {
+            "high": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.08}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.09}"
+              }
+            },
+            "low": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.01}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.02}"
+              }
+            },
+            "normal": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.04}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.info.05}"
+              }
+            }
+          },
+          "figure": {
+            "high": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.09}"
+            },
+            "low": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.02}"
+            },
+            "normal": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.05}"
+            },
+            "very-high": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.info.11}"
+            }
+          }
+        },
+        "intelligence": {
+          "background": {
+            "high": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.intelligence.06}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.intelligence.07}"
+              }
+            },
+            "low": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.intelligence.01}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.intelligence.02}"
+              }
+            },
+            "normal": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.intelligence.03}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.intelligence.04}"
+              }
+            }
+          },
+          "figure": {
+            "high": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.intelligence.09}"
+            },
+            "low": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.intelligence.02}"
+            },
+            "normal": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.intelligence.06}"
+            }
+          }
+        },
+        "neutral": {
+          "background": {
+            "empty": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.neutral.01}"
+            }
+          },
+          "figure": {
+            "empty": {
+              "$type": "color",
+              "$value": "{prism.color.chart.sequential.neutral.03}"
+            }
+          }
+        },
+        "status": {
+          "background": {
+            "critical": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.critical.03}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.critical.04}"
+              }
+            },
+            "success": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.success.02}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.success.03}"
+              }
+            },
+            "warning": {
+              "default": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.warning.03}"
+              },
+              "emphasis": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.warning.04}"
+              }
+            }
+          },
+          "figure": {
+            "critical": {
+              "normal": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.critical.05}"
+              },
+              "low": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.critical.02}"
+              }
+            },
+            "intelligence": {
+              "normal": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.intelligence.05}"
+              },
+              "low": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.intelligence.02}"
+              }
+            },
+            "success": {
+              "normal": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.success.05}"
+              },
+              "low": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.success.02}"
+              }
+            },
+            "warning": {
+              "normal": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.warning.05}"
+              },
+              "low": {
+                "$type": "color",
+                "$value": "{prism.color.chart.sequential.warning.02}"
+              }
+            }
+          }
+        }
+      },
+      "elevation": {
+        "backdrop": {
+          "default": {
+            "$description": "Use for overlay backdrops (e.g., modals, dialogs) over underlying content.",
+            "$type": "color",
+            "$value": "#2e3d4bb8"
+          },
+          "inverse": {
+            "$description": "Use for light overlay backdrops (e.g., modals, dialogs) over underlying content.",
+            "$type": "color",
+            "$value": "#ffffffb8"
+          }
+        },
+        "canvas": {
+          "$description": "Use for application background.",
+          "$type": "color",
+          "$value": "{prism.color.general.neutral.00}"
+        },
+        "surface": {
+          "$description": "Use for content backgrounds (e.g., cards).",
+          "$type": "color",
+          "$value": "{prism.color.general.neutral.50}"
+        }
+      },
+      "icon": {
+        "brand": {
+          "default": {
+            "$description": "Use for brand icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.brand.700}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized brand icon color. Pair with color-text-brand-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.brand.950}"
+          }
+        },
+        "critical": {
+          "default": {
+            "$description": "Use for critical icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.critical.700}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized critical icon color. Pair with color-text-critical-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.critical.950}"
+          }
+        },
+        "info": {
+          "default": {
+            "$description": "Use for informational icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.700}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized informational icon color. Pair with color-text-info-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.950}"
+          }
+        },
+        "intelligence": {
+          "default": {
+            "$description": "Use for intelligence icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.intelligence.700}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized intelligence icon color. Pair with color-text-intelligence-emphasis.",
+            "$type": "color",
+            "$value": "{prism.color.general.intelligence.950}"
+          }
+        },
+        "inverse": {
+          "$description": "Use for icons on inverted backgrounds.",
+          "$type": "color",
+          "$value": "{prism.color.general.neutral.00}"
+        },
+        "neutral": {
+          "default": {
+            "$description": "Use for default icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.900}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.950}"
+          },
+          "subdued": {
+            "$description": "Use for secondary icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.800}"
+          }
+        },
+        "success": {
+          "default": {
+            "$description": "Use for success icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.success.700}"
+          },
+          "emphasis": {
+            "$description": "Use for emphasized success icon color. Pair with color-text-info-success.",
+            "$type": "color",
+            "$value": "{prism.color.general.success.950}"
+          }
+        },
+        "warning": {
+          "default": {
+            "$description": "Use for warning icon color.",
+            "$type": "color",
+            "$value": "{prism.color.general.warning.700}"
+          },
+          "emphasis": {
+            "$description": "Use for warning informational icon color. Pair with color-text-info-warning.",
+            "$type": "color",
+            "$value": "{prism.color.general.warning.950}"
+          }
+        }
+      },
+      "interactive": {
+        "background": {
+          "critical": {
+            "hover": {
+              "$description": "Use for hover background of critical interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.critical.800}"
+            },
+            "idle": {
+              "$description": "Use for idle background of critical interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.critical.700}"
+            },
+            "pressed": {
+              "$description": "Use for pressed background of critical interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.critical.900}"
+            }
+          },
+          "disabled": {
+            "$description": "Use for disabled interactive background.",
+            "$type": "color",
+            "$value": "{prism.color.general.alpha.neutral.100}"
+          },
+          "ghost": {
+            "hover": {
+              "$description": "Use for hover background of tertiary interactive elements, such as icon buttons.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.neutral.300}"
+            },
+            "idle": {
+              "$description": "Use for idle background of tertiary interactive elements, such as icon buttons.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.neutral.00}"
+            },
+            "pressed": {
+              "$description": "Use for pressed background of tertiary interactive elements, such as icon buttons.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.neutral.400}"
+            },
+            "selected": {
+              "$description": "Use for pressed background of tertiary interactive elements, such as icon buttons.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.info.50}"
+            }
+          },
+          "inverse": {
+            "hover": {
+              "$description": "Use for hover background for elements on a inverse background.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.inverse.100}"
+            },
+            "idle": {
+              "$description": "Use for idle background for elements on a inverse background.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.inverse.50}"
+            },
+            "pressed": {
+              "$description": "Use for pressed background for elements on a inverse background.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.inverse.200}"
+            }
+          },
+          "primary": {
+            "hover": {
+              "$description": "Use for hover background of primary interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.info.800}"
+            },
+            "idle": {
+              "$description": "Use for idle background of primary interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.info.700}"
+            },
+            "pressed": {
+              "$description": "Use for pressed background of primary interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.info.900}"
+            },
+            "selected": {
+              "$description": "Use for selected background of primary interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.info.900}"
+            }
+          },
+          "secondary": {
+            "hover": {
+              "$description": "Use for hover background of secondary interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.neutral.300}"
+            },
+            "idle": {
+              "$description": "Use for idle background of secondary interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.neutral.200}"
+            },
+            "pressed": {
+              "$description": "Use for pressed background of secondary interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.neutral.400}"
+            },
+            "selected": {
+              "$description": "Use for selected background of secondary interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.alpha.info.50}"
+            }
+          },
+          "success": {
+            "hover": {
+              "$description": "Use for hover background of success interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.success.800}"
+            },
+            "idle": {
+              "$description": "Use for idle background of success interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.success.700}"
+            },
+            "pressed": {
+              "$description": "Use for pressed background of success interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.success.900}"
+            }
+          },
+          "warning": {
+            "hover": {
+              "$description": "Use for hover background of warning interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.warning.400}"
+            },
+            "idle": {
+              "$description": "Use for idle background of warning interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.warning.300}"
+            },
+            "pressed": {
+              "$description": "Use for pressed background of warning interactive elements.",
+              "$type": "color",
+              "$value": "{prism.color.general.warning.500}"
+            }
+          }
+        },
+        "border": {
+          "critical": {
+            "hover": {
+              "$description": "Use for hover border of critical interactive elements, such as input errors.",
+              "$type": "color",
+              "$value": "{prism.color.general.critical.700}"
+            },
+            "idle": {
+              "$description": "Use for idle border of critical interactive elements, such as input errors.",
+              "$type": "color",
+              "$value": "{prism.color.general.critical.600}"
+            },
+            "pressed": {
+              "$description": "Use for pressed border of critical interactive elements, such as input errors.",
+              "$type": "color",
+              "$value": "{prism.color.general.critical.800}"
+            }
+          },
+          "focus": {
+            "$description": "Use for focus ring around interactive elements.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.500}"
+          },
+          "neutral": {
+            "hover": {
+              "$description": "Use for hover border of interactive elements, such as inputs.",
+              "$type": "color",
+              "$value": "{prism.color.general.neutral.600}"
+            },
+            "idle": {
+              "$description": "Use for idle border of interactive elements, such as inputs.",
+              "$type": "color",
+              "$value": "{prism.color.general.neutral.500}"
+            },
+            "pressed": {
+              "$description": "Use for pressed border of interactive elements, such as inputs.",
+              "$type": "color",
+              "$value": "{prism.color.general.neutral.700}"
+            }
+          },
+          "warning": {
+            "hover": {
+              "$description": "Use for hover border of warning interactive elements, such as input warnings.",
+              "$type": "color",
+              "$value": "{prism.color.general.warning.600}"
+            },
+            "idle": {
+              "$description": "Use for idle border of warning interactive elements, such as input warnings.",
+              "$type": "color",
+              "$value": "{prism.color.general.warning.500}"
+            },
+            "pressed": {
+              "$description": "Use for pressed border of warning interactive elements, such as input warnings.",
+              "$type": "color",
+              "$value": "{prism.color.general.warning.700}"
+            }
+          }
+        },
+        "icon": {
+          "disabled": {
+            "$description": "Use for icons in disabled interactive elements.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.500}"
+          }
+        },
+        "text": {
+          "disabled": {
+            "$description": "Use for text in disabled interactive elements.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.500}"
+          },
+          "placeholder": {
+            "$description": "Use for placeholder text in form elements.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.600}"
+          },
+          "primary": {
+            "hover": {
+              "$description": "Use for hover text of primary links.",
+              "$type": "color",
+              "$value": "{prism.color.general.info.800}"
+            },
+            "idle": {
+              "$description": "Use for idle text of primary links.",
+              "$type": "color",
+              "$value": "{prism.color.general.info.700}"
+            },
+            "pressed": {
+              "$description": "Use for pressed text of primary links.",
+              "$type": "color",
+              "$value": "{prism.color.general.info.900}"
+            },
+            "selected": {
+              "$description": "Use for selected text of primary links.",
+              "$type": "color",
+              "$value": "{prism.color.general.info.950}"
+            }
+          },
+          "secondary": {
+            "hover": {
+              "$description": "Use for hover text of secondary links.",
+              "$type": "color",
+              "$value": "{prism.color.general.neutral.900}"
+            },
+            "idle": {
+              "$description": "Use for idle text of secondary links.",
+              "$type": "color",
+              "$value": "{prism.color.general.neutral.800}"
+            },
+            "pressed": {
+              "$description": "Use for pressed text of secondary links.",
+              "$type": "color",
+              "$value": "{prism.color.general.neutral.950}"
+            },
+            "selected": {
+              "$description": "Use for selected text of secondary links.",
+              "$type": "color",
+              "$value": "{prism.color.general.neutral.950}"
+            }
+          }
+        }
+      },
+      "text": {
+        "brand": {
+          "default": {
+            "$description": "Use for brand text.",
+            "$type": "color",
+            "$value": "{prism.color.general.brand.700}"
+          },
+          "emphasis": {
+            "$description": "Use for brand headers and high-contrast text.",
+            "$type": "color",
+            "$value": "{prism.color.general.brand.950}"
+          }
+        },
+        "critical": {
+          "default": {
+            "$description": "Use for critical text.",
+            "$type": "color",
+            "$value": "{prism.color.general.critical.700}"
+          },
+          "emphasis": {
+            "$description": "Use for critical headers and high-contrast text.",
+            "$type": "color",
+            "$value": "{prism.color.general.critical.950}"
+          }
+        },
+        "info": {
+          "default": {
+            "$description": "Use for informational text.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.700}"
+          },
+          "emphasis": {
+            "$description": "Use for informational headers and high-contrast text.",
+            "$type": "color",
+            "$value": "{prism.color.general.info.950}"
+          }
+        },
+        "intelligence": {
+          "default": {
+            "$description": "Use for intelligence text.",
+            "$type": "color",
+            "$value": "{prism.color.general.intelligence.700}"
+          },
+          "emphasis": {
+            "$description": "Use for intelligence headers and high-contrast text.",
+            "$type": "color",
+            "$value": "{prism.color.general.intelligence.950}"
+          }
+        },
+        "inverse": {
+          "$description": "Use for text on high-contrast backgrounds.",
+          "$type": "color",
+          "$value": "{prism.color.general.neutral.00}"
+        },
+        "neutral": {
+          "default": {
+            "$description": "Use for default text, such as body copy",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.900}"
+          },
+          "emphasis": {
+            "$description": "Use for headers and high-contrast text.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.950}"
+          },
+          "subdued": {
+            "$description": "Use for secondary text.",
+            "$type": "color",
+            "$value": "{prism.color.general.neutral.800}"
+          }
+        },
+        "success": {
+          "default": {
+            "$description": "Use for success text.",
+            "$type": "color",
+            "$value": "{prism.color.general.success.700}"
+          },
+          "emphasis": {
+            "$description": "Use for success headers and high-contrast text.",
+            "$type": "color",
+            "$value": "{prism.color.general.success.950}"
+          }
+        },
+        "warning": {
+          "default": {
+            "$description": "Use for warning text.",
+            "$type": "color",
+            "$value": "{prism.color.general.warning.700}"
+          },
+          "emphasis": {
+            "$description": "Use for warning headers and high-contrast text.",
+            "$type": "color",
+            "$value": "{prism.color.general.warning.950}"
+          }
+        }
+      }
+    }
+  }
+}

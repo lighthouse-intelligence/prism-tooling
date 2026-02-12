@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-prism-asset-base="vendor/prism-foundation">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Interactive palette preview tool for Prism design system colors - visualize sequential, categorical, and product color palettes" />
+  <meta name="keywords" content="design system, color palette, data visualization, prism, looker" />
+  <meta name="author" content="Prism Design System" />
+
+  <title>Prism Color Palette Preview</title>
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.css" />
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.dark.css" />
+  <link rel="stylesheet"
+    href="../vendor/prism-foundation/styles/lib/tokens.highcontrast-light.css" />
+  <link rel="stylesheet"
+    href="../vendor/prism-foundation/styles/lib/tokens.highcontrast-dark.css" />
+  <link rel="stylesheet" href="../styles/global.css" />
+</head>
+
+<body class="palette-preview">
+  <div class="prism-logo" aria-hidden="true">
+    <a href="../index.html">
+      <svg width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity=".5" d="M4 4h23a9 9 0 1 1 0 18H4V4Z" fill="currentColor" />
+        <path opacity=".5" d="M4 4h8v24H4zm27 0h23a9 9 0 1 1 0 18H31V4Z" fill="currentColor" />
+        <path opacity=".5" d="m31 4 21 24H31V4Zm27 0h8v24h-8zm34 16H76c0-8.837 7.163-16 16-16v16Z"
+          fill="currentColor" />
+        <path opacity=".5" d="M71 12h26c0 8.837-7.163 16-16 16V12Zm26-8 24 24H97V4Z" fill="currentColor" />
+        <path opacity=".5" d="M121 4 97 28h24V4Z" fill="currentColor" />
+      </svg>
+    </a>
+  </div>
+  <main>
+    <section class="prism-widget" id="palette-card">
+      <header>
+        <h2>Prism data palettes</h2>
+        <div class="controls">
+          <select id="theme-selector" class="prism-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="highcontrast-light">High Contrast Light</option>
+            <option value="highcontrast-dark">High Contrast Dark</option>
+          </select>
+        </div>
+      </header>
+      <div class="prism-main prism-widget__body">
+        <div class="prism-widget__content palette-content">
+          <div class="palette-layout">
+            <div class="palette-column">
+              <div class="intro">
+                <h2 class="palette-info__title" id="palette-title">Sequential Palette</h2>
+                <p class="palette-info__description" id="palette-description">Choose from a range of sequential color
+                  palettes designed for data visualization.</p>
+                <div class="swatch-actions">
+                  <button id="copy-looker" class="prism-button gap-100 prism-button--primary prism-button--medium"
+                    data-test-pseudo="" type="button">
+                    <span class="truncate">Copy color scale</span>
+                  </button>
+
+                </div>
+              </div>
+              <div class="controls">
+                <div class="control" id="tint-count-control">
+                  <div class="range-slider">
+                    <label id="tint-count-value">5</label>
+                    <input type="range" id="tint-count" min="3" max="11" value="5" step="1">
+                  </div>
+                </div>
+
+                <div class="swatch-area" id="swatch-area"></div>
+
+
+              </div>
+            </div>
+            <div class="palette-column--chart">
+              <h2>Preview</h2>
+              <div class="chart-container" id="chart-container"></div>
+            </div>
+
+          </div>
+        </div>
+        <nav class="prism-widget__sidebar palette-sidenav tokens-sidenav" id="palette-sidenav">
+          <div class="tokens-sidenav__inner">
+            <div class="palette-nav__group">
+              <ul class="prism-view-switcher-list palette-nav__tabs">
+                <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category is-active"
+                    data-category="sequential" role="button">Sequential</a></li>
+                <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-category="categorical"
+                    role="button">Categorical</a></li>
+                <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-category="accent"
+                    role="button">Accent</a></li>
+                <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-category="status"
+                    role="button">Status</a></li>
+                <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category"
+                    data-category="informational" role="button">Informational</a></li>
+                <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-category="intelligence"
+                    role="button">Intelligence</a></li>
+                <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-category="demand"
+                    role="button">Demand</a></li>
+              </ul>
+            </div>
+
+            <div class="palette-subcategory-group" id="palette-subcategory-control" hidden>
+              <ul class="prism-view-switcher-list palette-nav__tabs" id="palette-subcategory-options"></ul>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dependencies -->
+  <script
+    src="https://code.highcharts.com/12.4.0/highcharts.js"
+    integrity="sha384-SuKJbNf5exCoReOrvlG2qOS0m8rykJbV/EpkAZqFMxqGrDETIdBotuMnz746cTPS"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://code.highcharts.com/12.4.0/modules/heatmap.js"
+    integrity="sha384-wgl/Owyz3HqA1CDz8MtaTIh7lXCZaOs/txq1OmrZj/ERKCGYoWhClLJi0xJtyLQU"
+    crossorigin="anonymous"></script>
+
+  <!-- Application -->
+  <script type="module" src="../js/ColorPaletteApp.js"></script>
+</body>
+
+</html>

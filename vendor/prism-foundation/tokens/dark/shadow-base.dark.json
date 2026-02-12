@@ -1,0 +1,41 @@
+{
+  "prism": {
+    "shadow": {
+      "brand": {
+        "100": {
+          "$value": "rgba(145, 41, 17, 0.1) 0px 1px 3px 0px, rgba(145, 41, 17, 0.08) 0px 1px 2px 0px"
+        },
+        "200": {
+          "$value": "rgba(145, 41, 17, 0.2) 0px 8px 16px -4px, rgba(145, 41, 17, 0.06) 0px 4px 4px -2px"
+        },
+        "300": {
+          "$value": "rgba(145, 41, 17, 0.28) 0px 24px 48px -12px"
+        },
+        "inset": {
+          "$value": "rgba(145, 41, 17, 0.16) 0px 2px 4px 0px inset"
+        }
+      },
+      "neutral": {
+        "100": {
+          "$value": "0 0 0 1px rgba(255, 255, 255, 0)"
+        },
+        "200": {
+          "$value": "0 0 0 1px rgba(255, 255, 255, 0.14), 0 4px 10px rgba(0, 0, 0, 0.4)"
+        },
+        "300": {
+          "$value": "0 0 0 1px rgba(255, 255, 255, 0.16), 0px 4px 4px -2px rgba(0, 0, 0, 0.6)"
+        },
+        "inset": {
+          "$value": "rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset"
+        }
+      },
+      "reverse": {
+        "neutral": {
+          "200": {
+            "$value": "rgba(0, 0, 0, 0.08) 0px 8px 12px -4px, rgba(0, 0, 0, 0.04) 0px 4px 4px -2px"
+          }
+        }
+      }
+    }
+  }
+}

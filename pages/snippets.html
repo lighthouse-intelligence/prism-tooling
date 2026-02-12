@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en" data-prism-asset-base="vendor/prism-foundation">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banner Snippet Generator</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+</head>
+
+<body>
+  <div class="prism-logo" aria-hidden="true">
+    <a href="../index.html">
+      <svg width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity=".5" d="M4 4h13a9 9 0 1 1 0 18H4V4Z" fill="currentColor" />
+        <path opacity=".5" d="M4 4h8v24H4zm27 0h13a9 9 0 1 1 0 18H31V4Z" fill="currentColor" />
+        <path opacity=".5" d="m31 4 21 24H31V4Zm27 0h8v24h-8zm34 16H76c0-8.837 7.163-16 16-16v16Z"
+          fill="currentColor" />
+        <path opacity=".5" d="M71 12h16c0 8.837-7.163 16-16 16V12Zm26-8 24 24H97V4Z" fill="currentColor" />
+        <path opacity=".5" d="M121 4 97 28h24V4Z" fill="currentColor" />
+      </svg>
+    </a>
+  </div>
+  <main>
+    <section class="prism-widget">
+      <header>
+        <h2>HTML/CSS Snippets</h2>
+      </header>
+      <div class="prism-main prism-widget__body">
+        <div class="prism-widget__content snippets-content" data-view="banner">
+          <section class="preview-section" aria-label="Banner preview">
+            <div id="previewBanner" class="preview-banner" aria-live="polite">
+              <div class="preview-placeholder">Banner preview will appear here.</div>
+            </div>
+          </section>
+          <section class="control-panel" aria-label="Banner options">
+            <div class="prism-input-wrapper">
+              <label for="bannerType">Type</label>
+              <select class="prism-select" id="bannerType">
+                <option value="neutral">Neutral</option>
+                <option value="info" selected>Info</option>
+                <option value="success">Success</option>
+                <option value="warning">Warning</option>
+                <option value="critical">Critical</option>
+                <option value="intelligence">Intelligence</option>
+                <option value="brand">Brand</option>
+              </select>
+            </div>
+            <div class="prism-input-wrapper">
+              <label for="bannerIcon">Icon</label>
+              <select class="prism-select" id="bannerIcon">
+                <option value="">No icon</option>
+              </select>
+            </div>
+            <div>
+              <div class="prism-input-wrapper">
+                <label for="bannerTitle">Title text (optional)</label>
+                <input id="bannerTitle" class="prism-input" type="text" maxlength="120" placeholder="Banner title" />
+              </div>
+              <div class="prism-input-wrapper">
+                <label for="bannerBody">Body text</label>
+                <textarea id="bannerBody" class="prism-textarea" rows="3" placeholder="Supporting details about this banner live here."></textarea>
+              </div>
+              <div class="prism-input-wrapper prism-code-block">
+                <label for="bannerSnippetOutput">HTML snippet</label>
+                <textarea class="prism-textarea" id="bannerSnippetOutput" readonly spellcheck="false"></textarea>
+              </div>
+            </div>
+            <button class="prism-button gap-100 prism-button--primary prism-button--medium" type="button" data-copy="banner">
+              <span class="truncate">Copy HTML</span>
+            </button>
+          </section>
+          <div class="status copy-status" data-status="banner" role="status" aria-live="polite"></div>
+        </div>
+        <div class="prism-widget__content snippets-content" data-view="card" hidden>
+          <section class="preview-section" aria-label="Card preview">
+            <div id="cardPreview" class="card-preview" aria-live="polite">
+              <div class="preview-placeholder">Card preview will appear here.</div>
+            </div>
+          </section>
+          <section class="control-panel card-control-panel" aria-label="Card options">
+            <div class="prism-input-wrapper">
+              <label for="cardTitle">Header text</label>
+              <input id="cardTitle" class="prism-input" type="text" maxlength="160" placeholder="Card title" />
+            </div>
+            <div class="prism-input-wrapper">
+              <label for="cardBody">Body text</label>
+              <textarea id="cardBody" class="prism-textarea" rows="3" placeholder="Body copy for this card lives here."></textarea>
+            </div>
+            <div class="prism-input-wrapper prism-code-block">
+              <label for="cardSnippetOutput">HTML snippet</label>
+              <textarea class="prism-textarea" id="cardSnippetOutput" readonly spellcheck="false"></textarea>
+            </div>
+            <button class="prism-button gap-100 prism-button--primary prism-button--medium" type="button" data-copy="card">
+              <span class="truncate">Copy HTML</span>
+            </button>
+          </section>
+          <div class="status copy-status" data-status="card" role="status" aria-live="polite"></div>
+        </div>
+        <div class="prism-widget__content snippets-content" data-view="badge" hidden>
+          <section class="preview-section" aria-label="Badge preview">
+            <div id="badgePreview" class="badge-preview" aria-live="polite">
+              <div class="preview-placeholder">Badge preview will appear here.</div>
+            </div>
+          </section>
+          <section class="control-panel" aria-label="Badge options">
+            <div class="prism-input-wrapper">
+              <label for="badgeType">Type</label>
+              <select class="prism-select" id="badgeType">
+                <option value="neutral" selected>Neutral</option>
+                <option value="info">Info</option>
+                <option value="success">Success</option>
+                <option value="warning">Warning</option>
+                <option value="critical">Critical</option>
+                <option value="intelligence">Intelligence</option>
+                <option value="brand">Brand</option>
+              </select>
+            </div>
+            <div class="prism-input-wrapper">
+              <label for="badgeIcon">Icon</label>
+              <select class="prism-select" id="badgeIcon">
+                <option value="">No icon</option>
+              </select>
+            </div>
+            <div>
+              <div class="prism-input-wrapper">
+                <label for="badgeLabel">Badge text</label>
+                <input id="badgeLabel" class="prism-input" type="text" maxlength="60" placeholder="Badge label" />
+              </div>
+              <div class="prism-input-wrapper prism-code-block">
+                <label for="badgeSnippetOutput">HTML snippet</label>
+                <textarea class="prism-textarea" id="badgeSnippetOutput" readonly spellcheck="false"></textarea>
+              </div>
+            </div>
+            <button class="prism-button gap-100 prism-button--primary prism-button--medium" type="button" data-copy="badge">
+              <span class="truncate">Copy HTML</span>
+            </button>
+          </section>
+          <div class="status copy-status" data-status="badge" role="status" aria-live="polite"></div>
+        </div>
+        <div class="prism-widget__content snippets-content snippets-content--stacked" data-view="hero" hidden>
+          <section class="preview-section" aria-label="Hero preview">
+            <div id="heroPreview" class="hero-preview" aria-live="polite">
+              <div class="preview-placeholder">Hero preview will appear here.</div>
+            </div>
+          </section>
+          <section class="control-panel" aria-label="Hero options">
+            <div class="prism-input-wrapper">
+              <label for="heroVariant">Size</label>
+              <select id="heroVariant" class="prism-select">
+                <option value="standard" selected>Standard</option>
+                <option value="compact">Compact</option>
+              </select>
+            </div>
+            <div class="prism-input-wrapper">
+              <label for="heroTitle">Hero title</label>
+              <input id="heroTitle" class="prism-input" type="text" maxlength="160" placeholder="Hero headline" />
+            </div>
+            <div class="prism-input-wrapper">
+              <label for="heroIntro">Introduction</label>
+              <textarea id="heroIntro" class="prism-textarea" rows="4" placeholder="Introduce the key message for this page."></textarea>
+            </div>
+            <div class="prism-input-wrapper prism-code-block">
+              <label for="heroSnippetOutput">HTML snippet</label>
+              <textarea class="prism-textarea" id="heroSnippetOutput" readonly spellcheck="false"></textarea>
+            </div>
+            <button class="prism-button gap-100 prism-button--primary prism-button--medium" type="button" data-copy="hero">
+              <span class="truncate">Copy HTML</span>
+            </button>
+          </section>
+          <div class="status copy-status" data-status="hero" role="status" aria-live="polite"></div>
+        </div>
+        <div class="prism-widget__content snippets-content" data-view="text-marker" hidden>
+          <section class="preview-section" aria-label="Text marker preview">
+            <div id="markerPreview" class="marker-preview" aria-live="polite">
+              <div class="preview-placeholder">Text marker preview will appear here.</div>
+            </div>
+          </section>
+          <section class="control-panel" aria-label="Text marker options">
+            <div class="prism-input-wrapper">
+              <label for="markerType">Color</label>
+              <select id="markerType" class="prism-select">
+                <option value="neutral" selected>Neutral</option>
+                <option value="info">Info</option>
+                <option value="success">Success</option>
+                <option value="warning">Warning</option>
+                <option value="critical">Critical</option>
+                <option value="intelligence">Intelligence</option>
+                <option value="brand">Brand</option>
+              </select>
+            </div>
+            <div class="prism-input-wrapper">
+              <label for="markerIcon">Icon</label>
+              <select id="markerIcon" class="prism-select">
+                <option value="">No icon</option>
+              </select>
+            </div>
+            <div class="prism-input-wrapper">
+              <label for="markerText">Marked text</label>
+              <input id="markerText" class="prism-input" type="text" maxlength="120" placeholder="Marked text" />
+            </div>
+            <div class="prism-input-wrapper prism-code-block">
+              <label for="markerSnippetOutput">HTML snippet</label>
+              <textarea class="prism-textarea" id="markerSnippetOutput" readonly spellcheck="false"></textarea>
+            </div>
+            <button class="prism-button gap-100 prism-button--primary prism-button--medium" type="button" data-copy="text-marker">
+              <span class="truncate">Copy HTML</span>
+            </button>
+          </section>
+          <div class="status copy-status" data-status="text-marker" role="status" aria-live="polite"></div>
+        </div>
+        <nav class="prism-widget__sidebar tokens-sidenav" id="palettes-sidenav" aria-label="Snippet types">
+          <div class="tokens-sidenav__inner">
+            <ul class="prism-view-switcher-list palette-nav__tabs">
+              <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category is-active" data-view="banner" role="button">Banner</a></li>
+              <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-view="card" role="button">Card</a></li>
+              <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-view="badge" role="button">Badge</a></li>
+              <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-view="hero" role="button">Hero</a></li>
+              <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-view="text-marker" role="button">Text marker</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const LOADING_MESSAGE = 'Resolving Prism token values…';
+      const colorProbe = createColorProbe();
+      const ensureColor = createColorFormatter(colorProbe);
+      const ICON_OPTIONS = [
+        { value: '', label: 'No icon' },
+        { value: 'amenities-shower', label: 'Amenities Shower' },
+        { value: 'arrow-down', label: 'Arrow Down' },
+        { value: 'arrow-left', label: 'Arrow Left' },
+        { value: 'arrow-right', label: 'Arrow Right' },
+        { value: 'arrow-up', label: 'Arrow Up' },
+        { value: 'artificial-intelligence', label: 'Artificial Intelligence' },
+        { value: 'attach-file', label: 'Attach File' },
+        { value: 'automation-off', label: 'Automation Off' },
+        { value: 'automation', label: 'Automation' },
+        { value: 'badge-outline', label: 'Badge Outline' },
+        { value: 'badge', label: 'Badge' },
+        { value: 'bank', label: 'Bank' },
+        { value: 'banknotes', label: 'Banknotes' },
+        { value: 'bin', label: 'Bin' },
+        { value: 'book', label: 'Book' },
+        { value: 'bookmark-filled', label: 'Bookmark Filled' },
+        { value: 'bookmark-outline', label: 'Bookmark Outline' },
+        { value: 'bullet', label: 'Bullet' },
+        { value: 'business-type-hotel', label: 'Business Type Hotel' },
+        { value: 'business-type-market', label: 'Business Type Market' },
+        { value: 'calendar-accepted', label: 'Calendar Accepted' },
+        { value: 'calendar-add', label: 'Calendar Add' },
+        { value: 'calendar-clock', label: 'Calendar Clock' },
+        { value: 'calendar-default', label: 'Calendar Default' },
+        { value: 'calendar-message', label: 'Calendar Message' },
+        { value: 'checkmark', label: 'Checkmark' },
+        { value: 'chevron-down', label: 'Chevron Down' },
+        { value: 'chevron-left', label: 'Chevron Left' },
+        { value: 'chevron-right', label: 'Chevron Right' },
+        { value: 'chevron-up-double', label: 'Chevron Up Double' },
+        { value: 'chevron-up', label: 'Chevron Up' },
+        { value: 'circle-arrow-bottom', label: 'Circle Arrow Bottom' },
+        { value: 'circle-arrow-left', label: 'Circle Arrow Left' },
+        { value: 'circle-arrow-right', label: 'Circle Arrow Right' },
+        { value: 'circle-arrow-up', label: 'Circle Arrow Up' },
+        { value: 'circle-checkmark', label: 'Circle Checkmark' },
+        { value: 'circle-cross', label: 'Circle Cross' },
+        { value: 'circle-error-filled', label: 'Circle Error Filled' },
+        { value: 'circle-error-outline', label: 'Circle Error Outline' },
+        { value: 'circle-heart-filled', label: 'Circle Heart Filled' },
+        { value: 'circle-information-filled', label: 'Circle Information Filled' },
+        { value: 'circle-information-outline', label: 'Circle Information Outline' },
+        { value: 'circle-minus', label: 'Circle Minus' },
+        { value: 'circle-plus', label: 'Circle Plus' },
+        { value: 'circle-question-mark', label: 'Circle Question Mark' },
+        { value: 'circle-spanner', label: 'Circle Spanner' },
+        { value: 'circle-user', label: 'Circle User' },
+        { value: 'clock', label: 'Clock' },
+        { value: 'collapse-all', label: 'Collapse All' },
+        { value: 'collapse', label: 'Collapse' },
+        { value: 'comment-filled', label: 'Comment Filled' },
+        { value: 'comment-outline', label: 'Comment Outline' },
+        { value: 'compare', label: 'Compare' },
+        { value: 'connection', label: 'Connection' },
+        { value: 'contacts', label: 'Contacts' },
+        { value: 'copy', label: 'Copy' },
+        { value: 'credit-card', label: 'Credit Card' },
+        { value: 'cross', label: 'Cross' },
+        { value: 'currency', label: 'Currency' },
+        { value: 'devices-app', label: 'Devices App' },
+        { value: 'devices-desktop', label: 'Devices Desktop' },
+        { value: 'devices-phone', label: 'Devices Phone' },
+        { value: 'discount-filled', label: 'Discount Filled' },
+        { value: 'discount', label: 'Discount' },
+        { value: 'double-horizontal-line', label: 'Double Horizontal Line' },
+        { value: 'download', label: 'Download' },
+        { value: 'drag', label: 'Drag' },
+        { value: 'edit-pencil', label: 'Edit Pencil' },
+        { value: 'events-conference', label: 'Events Conference' },
+        { value: 'events-global', label: 'Events Global' },
+        { value: 'events-holiday', label: 'Events Holiday' },
+        { value: 'events-music', label: 'Events Music' },
+        { value: 'events-performing-arts', label: 'Events Performing Arts' },
+        { value: 'events-sports', label: 'Events Sports' },
+        { value: 'excel-export', label: 'Excel Export' },
+        { value: 'exclamation-mark', label: 'Exclamation Mark' },
+        { value: 'expand-all', label: 'Expand All' },
+        { value: 'expand', label: 'Expand' },
+        { value: 'export', label: 'Export' },
+        { value: 'feedback-negative-filled', label: 'Feedback Negative Filled' },
+        { value: 'feedback-negative-outline', label: 'Feedback Negative Outline' },
+        { value: 'feedback-positive-filled', label: 'Feedback Positive Filled' },
+        { value: 'feedback-positive-outline', label: 'Feedback Positive Outline' },
+        { value: 'feedback-super-positive-filled', label: 'Feedback Super Positive Filled' },
+        { value: 'feedback-super-positive-outline', label: 'Feedback Super Positive Outline' },
+        { value: 'file-chart', label: 'File Chart' },
+        { value: 'file', label: 'File' },
+        { value: 'filter', label: 'Filter' },
+        { value: 'flag', label: 'Flag' },
+        { value: 'flask', label: 'Flask' },
+        { value: 'folder-outline', label: 'Folder Outline' },
+        { value: 'folder', label: 'Folder' },
+        { value: 'heart-filled', label: 'Heart Filled' },
+        { value: 'heart-outline', label: 'Heart Outline' },
+        { value: 'image-filled', label: 'Image Filled' },
+        { value: 'image-outline', label: 'Image Outline' },
+        { value: 'image-stack', label: 'Image Stack' },
+        { value: 'kebab', label: 'Kebab' },
+        { value: 'layers', label: 'Layers' },
+        { value: 'link-out', label: 'Link Out' },
+        { value: 'link', label: 'Link' },
+        { value: 'location-pin-outline', label: 'Location Pin Outline' },
+        { value: 'location-pin', label: 'Location Pin' },
+        { value: 'lock', label: 'Lock' },
+        { value: 'login', label: 'Login' },
+        { value: 'logout', label: 'Logout' },
+        { value: 'mail-sent', label: 'Mail Sent' },
+        { value: 'mail', label: 'Mail' },
+        { value: 'major-otas', label: 'Major Otas' },
+        { value: 'mark-as-read', label: 'Mark As Read' },
+        { value: 'meals-all-inclusive', label: 'Meals All Inclusive' },
+        { value: 'meals-bed-and-breakfast', label: 'Meals Bed And Breakfast' },
+        { value: 'meals-full-meal', label: 'Meals Full Meal' },
+        { value: 'meals-half-meal', label: 'Meals Half Meal' },
+        { value: 'meals-room-only', label: 'Meals Room Only' },
+        { value: 'meatballs', label: 'Meatballs' },
+        { value: 'megaphone', label: 'Megaphone' },
+        { value: 'minus', label: 'Minus' },
+        { value: 'moon-outline', label: 'Moon Outline' },
+        { value: 'moon', label: 'Moon' },
+        { value: 'newspaper-1', label: 'Newspaper 1' },
+        { value: 'newspaper', label: 'Newspaper' },
+        { value: 'note-filled', label: 'Note Filled' },
+        { value: 'note-outline', label: 'Note Outline' },
+        { value: 'notification', label: 'Notification' },
+        { value: 'pin', label: 'Pin' },
+        { value: 'plane', label: 'Plane' },
+        { value: 'plus', label: 'Plus' },
+        { value: 'question-mark', label: 'Question Mark' },
+        { value: 'rates-best-flex', label: 'Rates Best Flex' },
+        { value: 'rates-lowest', label: 'Rates Lowest' },
+        { value: 'rates-semi-flex', label: 'Rates Semi Flex' },
+        { value: 'rates-third-party', label: 'Rates Third Party' },
+        { value: 'redo', label: 'Redo' },
+        { value: 'refer-friend', label: 'Refer Friend' },
+        { value: 'reset-currency', label: 'Reset Currency' },
+        { value: 'rocket', label: 'Rocket' },
+        { value: 'room-type-change', label: 'Room Type Change' },
+        { value: 'search', label: 'Search' },
+        { value: 'seat', label: 'Seat' },
+        { value: 'send-outline', label: 'Send Outline' },
+        { value: 'send', label: 'Send' },
+        { value: 'settings-outline', label: 'Settings Outline' },
+        { value: 'settings', label: 'Settings' },
+        { value: 'shopping-cart', label: 'Shopping Cart' },
+        { value: 'short-term-rental', label: 'Short Term Rental' },
+        { value: 'sidebar-arrow-left', label: 'Sidebar Arrow Left' },
+        { value: 'sidebar-arrow-right', label: 'Sidebar Arrow Right' },
+        { value: 'sliders', label: 'Sliders' },
+        { value: 'smart-insights', label: 'Smart Insights' },
+        { value: 'smart-summary', label: 'Smart Summary' },
+        { value: 'snooze', label: 'Snooze' },
+        { value: 'social-linkedin', label: 'Social Linkedin' },
+        { value: 'social-twitter', label: 'Social Twitter' },
+        { value: 'social-youtube', label: 'Social Youtube' },
+        { value: 'sort-asc', label: 'Sort Asc' },
+        { value: 'sort-desc', label: 'Sort Desc' },
+        { value: 'sort', label: 'Sort' },
+        { value: 'spinner', label: 'Spinner' },
+        { value: 'split', label: 'Split' },
+        { value: 'sso', label: 'Sso' },
+        { value: 'star-filled', label: 'Star Filled' },
+        { value: 'star-outline', label: 'Star Outline' },
+        { value: 'sticky-note', label: 'Sticky Note' },
+        { value: 'sunset', label: 'Sunset' },
+        { value: 'sync-disabled', label: 'Sync Disabled' },
+        { value: 'sync-issue', label: 'Sync Issue' },
+        { value: 'sync', label: 'Sync' },
+        { value: 'templates', label: 'Templates' },
+        { value: 'test-tube', label: 'Test Tube' },
+        { value: 'thumbs-down', label: 'Thumbs Down' },
+        { value: 'thumbs-up', label: 'Thumbs Up' },
+        { value: 'trending-down', label: 'Trending Down' },
+        { value: 'trending-up', label: 'Trending Up' },
+        { value: 'undo', label: 'Undo' },
+        { value: 'unpin', label: 'Unpin' },
+        { value: 'upload', label: 'Upload' },
+        { value: 'user-add', label: 'User Add' },
+        { value: 'user-group', label: 'User Group' },
+        { value: 'user', label: 'User' },
+        { value: 'view-calendar', label: 'View Calendar' },
+        { value: 'view-chart', label: 'View Chart' },
+        { value: 'view-large-grid', label: 'View Large Grid' },
+        { value: 'view-list', label: 'View List' },
+        { value: 'view-live', label: 'View Live' },
+        { value: 'view-small-grid', label: 'View Small Grid' },
+        { value: 'view-table', label: 'View Table' },
+        { value: 'views', label: 'Views' },
+        { value: 'visibility-off', label: 'Visibility Off' },
+        { value: 'visibility-on', label: 'Visibility On' },
+        { value: 'warning', label: 'Warning' }
+      ];
+      const iconLoader = createIconLoader({
+        basePaths: [
+          '../vendor/prism-foundation/icons/default/',
+          '/vendor/prism-foundation/icons/default/',
+          '/node_modules/@mylighthouse/prism-foundation/dist/icons/default/'
+        ],
+        size: 16
+      });
+
+      const snippets = [
+        createBannerSnippet({ ensureColor, escapeHtml }),
+        createCardSnippet({ ensureColor, escapeHtml }),
+        createBadgeSnippet({ ensureColor, escapeHtml }),
+        createHeroSnippet({ ensureColor, escapeHtml }),
+        createTextMarkerSnippet({ ensureColor, escapeHtml })
+      ].filter(Boolean);
+
+      const app = createSnippetApp({
+        defaultView: 'banner',
+        loadingMessage: LOADING_MESSAGE,
+        snippets,
+        viewLinkSelector: '.palette-nav__tabs a[data-view]'
+      });
+
+      app.init();
+
+      function createSnippetApp({ defaultView, loadingMessage, snippets: snippetConfigs, viewLinkSelector }) {
+        const controllers = snippetConfigs.map(createSnippetController).filter(Boolean);
+        const viewLinks = viewLinkSelector ? Array.from(document.querySelectorAll(viewLinkSelector)) : [];
+        const viewContainers = Array.from(document.querySelectorAll('.snippets-content[data-view]'));
+        const controllerMap = new Map(controllers.map(controller => [controller.id, controller]));
+        let currentView = controllerMap.has(defaultView) ? defaultView : controllers[0]?.id || null;
+
+        return { init };
+
+        function init() {
+          controllers.forEach(controller => controller.showLoading(loadingMessage));
+          controllers.forEach(controller => controller.init());
+          setCopyEnabled(false);
+          setupViewSwitching();
+          setupCopyButtons();
+          if (currentView) {
+            switchView(currentView);
+          }
+          bootstrapResolver();
+        }
+
+        function setupViewSwitching() {
+          viewLinks.forEach(link => {
+            link.addEventListener('click', event => {
+              event.preventDefault();
+              const targetView = link.dataset.view;
+              if (!targetView || targetView === currentView) return;
+              if (!controllerMap.has(targetView)) return;
+              switchView(targetView);
+            });
+          });
+        }
+
+        function switchView(targetView) {
+          currentView = targetView;
+          viewContainers.forEach(container => {
+            const isActive = container.dataset.view === targetView;
+            container.hidden = !isActive;
+            container.style.display = isActive ? '' : 'none';
+            container.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+            if (isActive) {
+              container.removeAttribute('inert');
+            } else {
+              container.setAttribute('inert', '');
+            }
+          });
+          viewLinks.forEach(link => {
+            const isActive = link.dataset.view === targetView;
+            link.classList.toggle('is-active', isActive);
+            link.setAttribute('aria-current', isActive ? 'page' : 'false');
+          });
+        }
+
+        function setupCopyButtons() {
+          controllers.forEach(controller => {
+            const button = controller.copyButton;
+            if (!button) return;
+            button.addEventListener('click', event => {
+              event.preventDefault();
+              handleCopy(controller.id);
+            });
+          });
+        }
+
+        async function handleCopy(snippetId) {
+          const controller = controllerMap.get(snippetId);
+          if (!controller) return;
+          const text = controller.getCopyText();
+          if (!text) {
+            controller.resetCopyLabel?.();
+            showStatus('Nothing to copy.', snippetId);
+            return;
+          }
+          if (!navigator || !navigator.clipboard || typeof navigator.clipboard.writeText !== 'function') {
+            controller.resetCopyLabel?.();
+            showStatus('Clipboard unavailable.', snippetId);
+            return;
+          }
+          try {
+            await navigator.clipboard.writeText(text);
+            controller.showCopySuccess?.();
+          } catch (error) {
+            console.error('Copy failed', error);
+            controller.resetCopyLabel?.();
+            showStatus('Unable to copy.', snippetId);
+          }
+        }
+
+        function showStatus(message, snippetId) {
+          const controller = controllerMap.get(snippetId);
+          if (!controller || !controller.statusEl) return;
+          controller.statusEl.textContent = message;
+          const { statusEl } = controller;
+          const timerKey = `status-${snippetId}`;
+          showStatus.timers = showStatus.timers || {};
+          window.clearTimeout(showStatus.timers[timerKey]);
+          showStatus.timers[timerKey] = window.setTimeout(() => {
+            statusEl.textContent = '';
+          }, 2400);
+        }
+
+        function setCopyEnabled(enabled) {
+          controllers.forEach(controller => controller.setCopyEnabled(enabled));
+        }
+
+        async function bootstrapResolver() {
+          let resolver = null;
+          try {
+            resolver = await buildTokenResolver();
+          } catch (error) {
+            console.error('Failed to resolve Prism tokens', error);
+          }
+          const resolveToken = resolver && typeof resolver.resolve === 'function'
+            ? tokenName => resolver.resolve(tokenName)
+            : () => '';
+          controllers.forEach(controller => {
+            controller.setResolver(resolveToken);
+            controller.update();
+          });
+          setCopyEnabled(true);
+        }
+      }
+
+      function createSnippetController(config) {
+        if (!config) return null;
+        const { id, elements, fields, watchers = [] } = config;
+        if (!id || !elements?.container || !elements.preview || !elements.output) {
+          console.warn(`Skipping snippet registration for ${id || 'unknown'} due to missing elements.`);
+          return null;
+        }
+
+        let resolver = () => '';
+        let lastOutput = '';
+        let updateScheduled = false;
+        const queueUpdate = typeof window !== 'undefined' && typeof window.requestAnimationFrame === 'function'
+          ? window.requestAnimationFrame.bind(window)
+          : callback => window.setTimeout(callback, 0);
+        const copyButton = elements.copyButton || null;
+        const defaultCopyLabel = copyButton?.textContent.trim() || 'Copy HTML';
+        let copyResetTimer = null;
+
+        function init() {
+          config.initialize?.(elements, fields);
+          watchers.forEach(({ element, event }) => {
+            if (!element || !event) return;
+            element.addEventListener(event, update);
+          });
+          update();
+        }
+
+        function update() {
+          const state = config.getState?.(fields) || {};
+          const values = config.resolveValues?.({
+            state,
+            resolveToken: token => resolver(token),
+            requestUpdate: scheduleUpdate
+          }) || {};
+          const rawSnippet = config.template?.({ state, values }) || '';
+          const rawPreview = config.previewTemplate
+            ? config.previewTemplate({ state, values, output: rawSnippet })
+            : rawSnippet;
+          const normalizedSnippet = typeof rawSnippet === 'string'
+            ? rawSnippet.replace(/\\n/g, '\n')
+            : '';
+          const normalizedPreview = typeof rawPreview === 'string'
+            ? rawPreview.replace(/\\n/g, '\n')
+            : '';
+          elements.preview.innerHTML = normalizedPreview;
+          elements.output.value = normalizedSnippet;
+          lastOutput = normalizedSnippet;
+        }
+
+        function scheduleUpdate() {
+          if (updateScheduled) return;
+          updateScheduled = true;
+          queueUpdate(() => {
+            updateScheduled = false;
+            update();
+          });
+        }
+
+        function showLoading(message) {
+          elements.output.value = message || '';
+          lastOutput = '';
+        }
+
+        function setResolver(fn) {
+          if (typeof fn === 'function') {
+            resolver = fn;
+          } else {
+            resolver = () => '';
+          }
+        }
+
+        function getCopyText() {
+          return lastOutput || elements.output.value || '';
+        }
+
+        function setCopyEnabled(enabled) {
+          const button = elements.copyButton;
+          if (!button) return;
+          button.disabled = !enabled;
+          if (enabled) {
+            button.removeAttribute('aria-disabled');
+            resetCopyLabel();
+          } else {
+            button.setAttribute('aria-disabled', 'true');
+            resetCopyLabel();
+          }
+        }
+
+        function showCopySuccess() {
+          if (!copyButton) return;
+          window.clearTimeout(copyResetTimer);
+          copyButton.textContent = 'Copied!';
+          copyResetTimer = window.setTimeout(() => {
+            copyButton.textContent = defaultCopyLabel;
+          }, 2000);
+        }
+
+        function resetCopyLabel() {
+          if (!copyButton) return;
+          window.clearTimeout(copyResetTimer);
+          copyButton.textContent = defaultCopyLabel;
+        }
+
+        return {
+          id,
+          container: elements.container,
+          copyButton: elements.copyButton,
+          statusEl: elements.status,
+          init,
+          update,
+          showLoading,
+          setResolver,
+          getCopyText,
+          setCopyEnabled,
+          showCopySuccess,
+          resetCopyLabel
+        };
+      }
+
+      function createBannerSnippet({ ensureColor, escapeHtml: escape }) {
+        const container = document.querySelector('.snippets-content[data-view="banner"]');
+        if (!container) return null;
+
+        const typeSelect = document.getElementById('bannerType');
+        const iconSelect = document.getElementById('bannerIcon');
+        const titleInput = document.getElementById('bannerTitle');
+        const bodyInput = document.getElementById('bannerBody');
+        const preview = document.getElementById('previewBanner');
+        const output = document.getElementById('bannerSnippetOutput');
+        const copyButton = document.querySelector('button[data-copy="banner"]');
+        const status = document.querySelector('[data-status="banner"]');
+
+        if (!preview || !output) return null;
+
+        const DEFAULT_TYPE = 'info';
+        const DEFAULT_BODY = 'Supporting details about this banner live here.';
+        const BODY_TEXT_TOKEN = '--prism-color-text-neutral-emphasis';
+        const FALLBACK_BODY = '#1f2124';
+
+        const TOKEN_CONFIG = {
+          neutral: {
+            background: '--prism-color-background-neutral-subdued',
+            border: '--prism-color-border-neutral-default',
+            title: '--prism-color-text-neutral-default'
+          },
+          info: {
+            background: '--prism-color-background-info-subdued',
+            border: '--prism-color-border-info-default',
+            title: '--prism-color-text-info-default'
+          },
+          success: {
+            background: '--prism-color-background-success-subdued',
+            border: '--prism-color-border-success-default',
+            title: '--prism-color-text-success-default'
+          },
+          warning: {
+            background: '--prism-color-background-warning-subdued',
+            border: '--prism-color-border-warning-default',
+            title: '--prism-color-text-warning-default'
+          },
+          critical: {
+            background: '--prism-color-background-critical-subdued',
+            border: '--prism-color-border-critical-default',
+            title: '--prism-color-text-critical-default'
+          },
+          intelligence: {
+            background: '--prism-gradient-background-intelligence-subdued',
+            border: '--prism-color-border-intelligence-default',
+            title: '--prism-color-text-intelligence-emphasis'
+          },
+          brand: {
+            background: '--prism-gradient-background-brand-subdued',
+            border: '--prism-color-border-brand-default',
+            title: '--prism-color-text-brand-emphasis'
+          }
+        };
+
+        const FALLBACK_VALUES = {
+          neutral: {
+            background: '#f9fafb',
+            border: '#e6e9ef',
+            title: '#2e3d4b'
+          },
+          info: {
+            background: '#ebf6ff',
+            border: '#add8ff',
+            title: '#125fe3'
+          },
+          success: {
+            background: '#e2f9e9',
+            border: '#98e3b3',
+            title: '#0e7744'
+          },
+          warning: {
+            background: '#fff2d5',
+            border: '#ffca66',
+            title: '#b83f06'
+          },
+          critical: {
+            background: '#fff0ee',
+            border: '#ffc5c0',
+            title: '#cd1c07'
+          },
+          intelligence: {
+            background: 'linear-gradient(135deg, #f5f2ff 0%, #d7cbff 100%)',
+            border: '#d7cbff',
+            title: '#441280'
+          },
+          brand: {
+            background: 'linear-gradient(135deg, #fff6ea 0%, #fd9b60 100%)',
+            border: '#fed9c3',
+            title: '#6b2211'
+          }
+        };
+
+        const elements = { container, preview, output, copyButton, status };
+        const fields = { type: typeSelect, icon: iconSelect, title: titleInput, body: bodyInput };
+
+        return {
+          id: 'banner',
+          elements,
+          fields,
+          watchers: [
+            { element: typeSelect, event: 'change' },
+            { element: iconSelect, event: 'change' },
+            { element: titleInput, event: 'input' },
+            { element: bodyInput, event: 'input' }
+          ],
+          initialize() {
+            if (typeSelect) {
+              typeSelect.value = ensureType(typeSelect.value);
+            }
+            populateIconSelect(iconSelect);
+            if (iconSelect && !ICON_OPTIONS.some(option => option.value === iconSelect.value)) {
+              iconSelect.value = '';
+            }
+            if (bodyInput && !bodyInput.value) {
+              bodyInput.value = DEFAULT_BODY;
+            }
+          },
+          getState() {
+            const type = ensureType(typeSelect?.value);
+            const icon = (iconSelect?.value || '').trim();
+            const title = (titleInput?.value || '').trim();
+            const body = (bodyInput?.value || '').trim() || DEFAULT_BODY;
+            return { type, icon, title, body };
+          },
+          resolveValues({ state, resolveToken, requestUpdate }) {
+            const config = TOKEN_CONFIG[state.type] || TOKEN_CONFIG[DEFAULT_TYPE];
+            const fallback = FALLBACK_VALUES[state.type] || FALLBACK_VALUES[DEFAULT_TYPE];
+            const iconMarkup = iconLoader.getMarkup(state.icon, requestUpdate, { size: 20 });
+            return {
+              background: ensureColor(resolveToken(config.background)) || fallback.background,
+              border: ensureColor(resolveToken(config.border)) || fallback.border,
+              title: ensureColor(resolveToken(config.title)) || fallback.title,
+              body: ensureColor(resolveToken(BODY_TEXT_TOKEN)) || FALLBACK_BODY,
+              iconMarkup
+            };
+          },
+          template({ state, values }) {
+            const title = escape(state.title);
+            const body = escape(state.body).replace(/\n/g, '<br />');
+            const hasIcon = Boolean(values.iconMarkup);
+            const hasTitle = Boolean(title);
+            const containerStyles = [
+              `background: ${values.background}`,
+              `border: 1px solid ${values.border}`,
+              'border-radius: 12px',
+              'padding: 16px',
+              'display: flex',
+              'align-items: center'
+            ].join('; ');
+            const lines = [`<div class="snippet-banner" style="${containerStyles};">`];
+            if (hasIcon) {
+              const iconStyles = [
+                'display: inline-flex',
+                'align-items: center',
+                'justify-content: center',
+                `color: ${values.title}`,
+                'flex: 0 0 auto',
+                'width: 20px',
+                'height: 20px',
+                'margin-right: 12px'
+              ].join('; ');
+              lines.push(`  <div class="snippet-banner__icon" style="${iconStyles};">${values.iconMarkup}</div>`);
+            }
+            const contentStyles = [
+              'flex: 1 1 auto'
+            ];
+            lines.push(`  <div class="snippet-banner__content" style="${contentStyles.join('; ')};">`);
+            if (hasTitle) {
+              lines.push(`    <h3 style="color: ${values.title}; font-size: 16px; font-weight: 600; margin: 0 0 8px 0;">${title}</h3>`);
+            }
+            lines.push(`    <p style="color: ${values.body}; font-size: 14px; line-height: 1.5; margin: 0;">${body}</p>`);
+            lines.push('  </div>');
+            lines.push(`</div>`);
+            return lines.join('\n');
+          }
+        };
+
+        function ensureType(value) {
+          if (value && TOKEN_CONFIG[value]) return value;
+          return DEFAULT_TYPE;
+        }
+      }
+
+      function createCardSnippet({ ensureColor, escapeHtml: escape }) {
+        const container = document.querySelector('.snippets-content[data-view="card"]');
+        if (!container) return null;
+
+        const titleInput = document.getElementById('cardTitle');
+        const bodyInput = document.getElementById('cardBody');
+        const preview = document.getElementById('cardPreview');
+        const output = document.getElementById('cardSnippetOutput');
+        const copyButton = document.querySelector('button[data-copy="card"]');
+        const status = document.querySelector('[data-status="card"]');
+
+        if (!preview || !output) return null;
+
+        const CARD_DEFAULT_TITLE = 'Card title';
+        const CARD_PLACEHOLDER_BODY = 'Body copy for this card lives here.';
+        const CARD_TOKEN_CONFIG = {
+          background: '--prism-color-elevation-surface',
+          headerBorder: '--prism-color-border-neutral-default',
+          headerText: '--prism-color-text-neutral-default',
+          bodyText: '--prism-color-text-neutral-emphasis'
+        };
+        const CARD_FALLBACK_VALUES = {
+          background: '#f9fafb',
+          headerBorder: '#e6e9ef',
+          headerText: '#2e3d4b',
+          bodyText: '#1f2124'
+        };
+
+        const elements = { container, preview, output, copyButton, status };
+        const fields = { title: titleInput, body: bodyInput };
+
+        return {
+          id: 'card',
+          elements,
+          fields,
+          watchers: [
+            { element: titleInput, event: 'input' },
+            { element: bodyInput, event: 'input' }
+          ],
+          initialize() {
+            if (titleInput && !titleInput.value) {
+              titleInput.value = CARD_DEFAULT_TITLE;
+            }
+            if (bodyInput && !bodyInput.value) {
+              bodyInput.value = CARD_PLACEHOLDER_BODY;
+            }
+          },
+          getState() {
+            const title = (titleInput?.value || '').trim() || CARD_DEFAULT_TITLE;
+            const body = (bodyInput?.value || '').trim() || CARD_PLACEHOLDER_BODY;
+            return { title, body };
+          },
+          resolveValues({ resolveToken }) {
+            return {
+              background: ensureColor(resolveToken(CARD_TOKEN_CONFIG.background)) || CARD_FALLBACK_VALUES.background,
+              headerBorder: ensureColor(resolveToken(CARD_TOKEN_CONFIG.headerBorder)) || CARD_FALLBACK_VALUES.headerBorder,
+              headerText: ensureColor(resolveToken(CARD_TOKEN_CONFIG.headerText)) || CARD_FALLBACK_VALUES.headerText,
+              bodyText: ensureColor(resolveToken(CARD_TOKEN_CONFIG.bodyText)) || CARD_FALLBACK_VALUES.bodyText
+            };
+          },
+          template({ state, values }) {
+            const title = escape(state.title).replace(/\n/g, '<br />');
+            const body = escape(state.body).replace(/\n/g, '<br />');
+            return [
+              `<div class="snippet-card" style="background: ${values.background}; border: 1px solid ${values.headerBorder}; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">`,
+              `  <div class="snippet-card__header" style="padding: 12px 20px; border-bottom: 1px solid ${values.headerBorder};">`,
+              `    <h3 style="margin: 0; color: ${values.headerText}; font-size: 18px; font-weight: 600;">${title}</h3>`,
+              '  </div>',
+              `  <div class="snippet-card__body" style="padding: 20px; color: ${values.bodyText}; line-height: 1.5;">${body}</div>`,
+              '</div>'
+            ].join('\n');
+          }
+        };
+      }
+
+      function createBadgeSnippet({ ensureColor, escapeHtml: escape }) {
+        const container = document.querySelector('.snippets-content[data-view="badge"]');
+        if (!container) return null;
+
+        const typeSelect = document.getElementById('badgeType');
+        const iconSelect = document.getElementById('badgeIcon');
+        const labelInput = document.getElementById('badgeLabel');
+        const preview = document.getElementById('badgePreview');
+        const output = document.getElementById('badgeSnippetOutput');
+        const copyButton = document.querySelector('button[data-copy="badge"]');
+        const status = document.querySelector('[data-status="badge"]');
+
+        if (!preview || !output) return null;
+
+        const TYPES = ['neutral', 'info', 'success', 'warning', 'critical', 'intelligence', 'brand'];
+        const DEFAULT_TYPE = 'neutral';
+        const DEFAULT_LABEL = 'Badge label';
+        const TOKEN_CONFIG = type => {
+          if (type === 'intelligence') {
+            return {
+              background: '--prism-color-general-intelligence-200',
+              text: '--prism-color-text-intelligence-emphasis'
+            };
+          }
+          if (type === 'brand') {
+            return {
+              background: '--prism-color-general-brand-200',
+              text: '--prism-color-text-brand-emphasis'
+            };
+          }
+          return {
+            background: `--prism-color-background-${type}-default`,
+            text: `--prism-color-text-${type}-emphasis`
+          };
+        };
+        const FALLBACK_VALUES = {
+          neutral: { background: '#e6e9ef', text: '#2e3d4b' },
+          info: { background: '#d5e8ff', text: '#0f4cc7' },
+          success: { background: '#b8f0c9', text: '#0e5f39' },
+          warning: { background: '#ffd392', text: '#8a3a03' },
+          critical: { background: '#ffada5', text: '#921108' },
+          intelligence: { background: '#d7cbff', text: '#441280' },
+          brand: { background: '#fed9c3', text: '#6b2211' }
+        };
+
+        const elements = { container, preview, output, copyButton, status };
+        const fields = { type: typeSelect, icon: iconSelect, label: labelInput };
+
+        return {
+          id: 'badge',
+          elements,
+          fields,
+          watchers: [
+            { element: typeSelect, event: 'change' },
+            { element: iconSelect, event: 'change' },
+            { element: labelInput, event: 'input' }
+          ],
+          initialize() {
+            if (typeSelect) {
+              typeSelect.value = ensureType(typeSelect.value);
+            }
+            populateIconSelect(iconSelect);
+            if (iconSelect && !ICON_OPTIONS.some(option => option.value === iconSelect.value)) {
+              iconSelect.value = '';
+            }
+            if (labelInput && !labelInput.value) {
+              labelInput.value = DEFAULT_LABEL;
+            }
+          },
+          getState() {
+            const type = ensureType(typeSelect?.value);
+            const icon = (iconSelect?.value || '').trim();
+            const label = (labelInput?.value || '').trim() || DEFAULT_LABEL;
+            return { type, icon, label };
+          },
+          resolveValues({ state, resolveToken, requestUpdate }) {
+            const config = TOKEN_CONFIG(state.type);
+            const fallback = FALLBACK_VALUES[state.type] || FALLBACK_VALUES[DEFAULT_TYPE];
+            const iconMarkup = iconLoader.getMarkup(state.icon, requestUpdate);
+            return {
+              background: ensureColor(resolveToken(config.background)) || fallback.background,
+              text: ensureColor(resolveToken(config.text)) || fallback.text,
+              iconMarkup
+            };
+          },
+          template({ state, values }) {
+            const label = escape(state.label).replace(/\n/g, '<br />');
+            const labelMarkup = `<span style="display: inline-block;">${label}</span>`;
+            const hasIcon = Boolean(values.iconMarkup);
+            const content = hasIcon
+              ? `<span style="display: inline-flex; align-items: center; gap: 6px;">${values.iconMarkup}${labelMarkup}</span>`
+              : labelMarkup;
+            return [
+              `<div class="snippet-badge" style="display: inline-block; padding: 4px 12px; border-radius: 999px; background: ${values.background}; color: ${values.text}; font-size: 0.875rem; font-weight: 600; line-height: 1.4;">`,
+              `  ${content}`,
+              `</div>`
+            ].join('\n');
+          }
+        };
+
+        function ensureType(value) {
+          if (value && TYPES.includes(value)) return value;
+          return DEFAULT_TYPE;
+        }
+
+      }
+
+      function createHeroSnippet({ ensureColor, escapeHtml: escape }) {
+        const container = document.querySelector('.snippets-content[data-view="hero"]');
+        if (!container) return null;
+
+        const variantSelect = document.getElementById('heroVariant');
+        const titleInput = document.getElementById('heroTitle');
+        const introInput = document.getElementById('heroIntro');
+        const preview = document.getElementById('heroPreview');
+        const output = document.getElementById('heroSnippetOutput');
+        const copyButton = document.querySelector('button[data-copy="hero"]');
+        const status = document.querySelector('[data-status="hero"]');
+
+        if (!preview || !output) return null;
+
+        const HERO_DEFAULT_TITLE = 'Design with confidence';
+        const HERO_DEFAULT_INTRO = 'Introduce the primary message for this page with a concise supporting statement.';
+        const HERO_TOKEN_CONFIG = {
+          background: '--prism-color-background-neutral-subdued',
+          title: '--prism-color-text-neutral-default',
+          intro: '--prism-color-text-neutral-emphasis'
+        };
+        const HERO_FALLBACK_VALUES = {
+          background: '#f5f7fa',
+          title: '#1f2933',
+          intro: '#3c4858'
+        };
+        const HERO_VARIANTS = {
+          standard: {
+            maxWidth: '600px',
+            gap: '12px',
+            titleSize: '32px',
+            titleWeight: '700',
+            titleLineHeight: '1.2',
+            introSize: '16px',
+            introLineHeight: '1.6'
+          },
+          compact: {
+            maxWidth: '480px',
+            gap: '8px',
+            titleSize: '20px',
+            titleWeight: '600',
+            titleLineHeight: '1.3',
+            introSize: '14px',
+            introLineHeight: '1.5'
+          }
+        };
+
+        const elements = { container, preview, output, copyButton, status };
+        const fields = { variant: variantSelect, title: titleInput, intro: introInput };
+
+        return {
+          id: 'hero',
+          elements,
+          fields,
+          watchers: [
+            { element: variantSelect, event: 'change' },
+            { element: titleInput, event: 'input' },
+            { element: introInput, event: 'input' }
+          ],
+          initialize() {
+            if (variantSelect && !variantSelect.value) {
+              variantSelect.value = 'standard';
+            }
+            if (titleInput && !titleInput.value) {
+              titleInput.value = HERO_DEFAULT_TITLE;
+            }
+            if (introInput && !introInput.value) {
+              introInput.value = HERO_DEFAULT_INTRO;
+            }
+          },
+          getState() {
+            const variant = (variantSelect?.value || '').trim().toLowerCase();
+            const title = (titleInput?.value || '').trim() || HERO_DEFAULT_TITLE;
+            const intro = (introInput?.value || '').trim() || HERO_DEFAULT_INTRO;
+            return { variant, title, intro };
+          },
+          resolveValues({ state, resolveToken }) {
+            const variantKey = HERO_VARIANTS[state.variant] ? state.variant : 'standard';
+            const variantStyles = HERO_VARIANTS[variantKey];
+            return {
+              background: ensureColor(resolveToken(HERO_TOKEN_CONFIG.background)) || HERO_FALLBACK_VALUES.background,
+              title: ensureColor(resolveToken(HERO_TOKEN_CONFIG.title)) || HERO_FALLBACK_VALUES.title,
+              intro: ensureColor(resolveToken(HERO_TOKEN_CONFIG.intro)) || HERO_FALLBACK_VALUES.intro,
+              variantStyles
+            };
+          },
+          template({ state, values }) {
+            const title = escape(state.title).replace(/\n/g, '<br />');
+            const intro = escape(state.intro).replace(/\n/g, '<br />');
+            const variantKey = HERO_VARIANTS[state.variant] ? state.variant : 'standard';
+            const styles = values.variantStyles || HERO_VARIANTS[variantKey] || HERO_VARIANTS.standard;
+            return [
+              `<div class="snippet-hero" style="max-width: ${styles.maxWidth}; margin: 0 auto; text-align: center;">`,
+              `  <h1 style="margin: 0; color: ${values.title}; font-size: ${styles.titleSize}; font-weight: ${styles.titleWeight}; line-height: ${styles.titleLineHeight};">${title}</h1>`,
+              `  <p style="margin: ${styles.gap} 0 0; color: ${values.intro}; font-size: ${styles.introSize}; line-height: ${styles.introLineHeight};">${intro}</p>`,
+              `</div>`
+            ].join('\n');
+          }
+        };
+      }
+
+      function createTextMarkerSnippet({ ensureColor, escapeHtml: escape }) {
+        const container = document.querySelector('.snippets-content[data-view="text-marker"]');
+        if (!container) return null;
+
+        const typeSelect = document.getElementById('markerType');
+        const iconSelect = document.getElementById('markerIcon');
+        const textInput = document.getElementById('markerText');
+        const preview = document.getElementById('markerPreview');
+        const output = document.getElementById('markerSnippetOutput');
+        const copyButton = document.querySelector('button[data-copy="text-marker"]');
+        const status = document.querySelector('[data-status="text-marker"]');
+
+        if (!preview || !output) return null;
+
+        const TYPES = ['neutral', 'info', 'success', 'warning', 'critical', 'intelligence', 'brand'];
+        const DEFAULT_TYPE = 'info';
+        const DEFAULT_TEXT = 'Marked text';
+        const TOKEN_CONFIG = type => {
+          if (type === 'intelligence') {
+            return {
+              background: '----prism-general-intelligence-200',
+              text: '--prism-color-text-intelligence-emphasis'
+            };
+          }
+          if (type === 'brand') {
+            return {
+              background: '--prism-general-brand-200',
+              text: '--prism-color-text-brand-emphasis'
+            };
+          }
+          return {
+            background: `--prism-color-background-${type}-default`,
+            text: `--prism-color-text-${type}-emphasis`
+          };
+        };
+        const FALLBACK_VALUES = {
+          neutral: { background: '#e6e9ef', text: '#2e3d4b' },
+          info: { background: '#d5e8ff', text: '#0f4cc7' },
+          success: { background: '#b8f0c9', text: '#0e5f39' },
+          warning: { background: '#ffd392', text: '#8a3a03' },
+          critical: { background: '#ffada5', text: '#921108' },
+          intelligence: { background: '#d7cbff', text: '#441280' },
+          brand: { background: '#fed9c3', text: '#6b2211' }
+        };
+
+        const elements = { container, preview, output, copyButton, status };
+        const fields = { type: typeSelect, icon: iconSelect, text: textInput };
+
+        return {
+          id: 'text-marker',
+          elements,
+          fields,
+          watchers: [
+            { element: typeSelect, event: 'change' },
+            { element: iconSelect, event: 'change' },
+            { element: textInput, event: 'input' }
+          ],
+          initialize() {
+            if (typeSelect) {
+              typeSelect.value = ensureType(typeSelect.value);
+            }
+            populateIconSelect(iconSelect);
+            if (iconSelect && !ICON_OPTIONS.some(option => option.value === iconSelect.value)) {
+              iconSelect.value = '';
+            }
+            if (textInput && !textInput.value) {
+              textInput.value = DEFAULT_TEXT;
+            }
+          },
+          getState() {
+            const type = ensureType(typeSelect?.value);
+            const icon = (iconSelect?.value || '').trim();
+            const text = (textInput?.value || '').trim() || DEFAULT_TEXT;
+            return { type, icon, text };
+          },
+          resolveValues({ state, resolveToken, requestUpdate }) {
+            const config = TOKEN_CONFIG(state.type);
+            const fallback = FALLBACK_VALUES[state.type] || FALLBACK_VALUES[DEFAULT_TYPE];
+            return {
+              background: ensureColor(resolveToken(config.background)) || fallback.background,
+              text: ensureColor(resolveToken(config.text)) || fallback.text,
+              iconMarkup: iconLoader.getMarkup(state.icon, requestUpdate, { size: 14 })
+            };
+          },
+          template({ state, values }) {
+            const safeText = escape(state.text).replace(/\n/g, '<br />');
+            const hasIcon = Boolean(values.iconMarkup);
+            const content = hasIcon
+              ? `<span style="display: inline-flex; align-items: center; gap: 6px;">${values.iconMarkup}<span>${safeText}</span></span>`
+              : safeText;
+            return `<span style="background-color: ${values.background}; border-radius: 4px; padding: 1px 4px; color: ${values.text};">${content}</span>`;
+          },
+          previewTemplate({ state, values, output }) {
+            const sentence = 'Highlight important keywords to help readers scan content quickly.';
+            const safeSentence = escape(sentence);
+            const highlighted = output;
+            return `<p style="font-size: 1rem; line-height: 1.6; color: var(--prism-color-text-neutral-default);">${safeSentence.replace('keywords', `${highlighted}`)}</p>`;
+          }
+        };
+
+        function ensureType(value) {
+          if (value && TYPES.includes(value)) return value;
+          return DEFAULT_TYPE;
+        }
+      }
+
+      function populateIconSelect(select) {
+        if (!select) return;
+        if (select.dataset.hasIconOptions === 'true') return;
+        const fragment = document.createDocumentFragment();
+        ICON_OPTIONS.forEach(option => {
+          const optionEl = document.createElement('option');
+          optionEl.value = option.value;
+          optionEl.textContent = option.label;
+          fragment.appendChild(optionEl);
+        });
+        select.innerHTML = '';
+        select.appendChild(fragment);
+        select.dataset.hasIconOptions = 'true';
+      }
+
+      async function buildTokenResolver() {
+        const styles = getComputedStyle(document.documentElement);
+        const map = await loadTokenMap();
+        const mapResolver = map ? createResolver(tokenName => map[tokenName]) : null;
+        const computedResolver = createResolver(tokenName => styles.getPropertyValue(tokenName));
+
+        return {
+          resolve(tokenName) {
+            if (!tokenName) return '';
+            if (mapResolver) {
+              const value = mapResolver(tokenName);
+              if (value) return value;
+            }
+            return computedResolver ? computedResolver(tokenName) : '';
+          }
+        };
+      }
+
+      async function loadTokenMap() {
+        const candidates = [
+          '../vendor/prism-foundation/styles/lib/tokens.css',
+          '/vendor/prism-foundation/styles/lib/tokens.css',
+          '/node_modules/@mylighthouse/prism-foundation/dist/styles/lib/tokens.css'
+        ];
+
+        for (const href of candidates) {
+          try {
+            const response = await fetch(href, { cache: 'no-store' });
+            if (!response.ok) continue;
+            const cssText = await response.text();
+            return parseTokenMap(cssText);
+          } catch (error) {
+            console.warn(`Unable to fetch tokens at ${href}`, error);
+          }
+        }
+
+        return null;
+      }
+
+      function parseTokenMap(cssText) {
+        const sanitized = cssText.replace(/\/\*[\s\S]*?\*\//g, ' ');
+        const rootMatch = sanitized.match(/:root\s*\{([\s\S]*?)\}/);
+        if (!rootMatch) return {};
+        return extractVars(rootMatch[1]);
+      }
+
+      function extractVars(block) {
+        const vars = {};
+        const varRegex = /(--[\w-]+)\s*:\s*([^;]+);/g;
+        let match;
+        while ((match = varRegex.exec(block)) !== null) {
+          const name = match[1].trim();
+          const value = match[2].trim();
+          vars[name] = value;
+        }
+        return vars;
+      }
+
+      function createResolver(getTokenValue) {
+        const cache = new Map();
+
+        function resolve(tokenName, stack = new Set()) {
+          if (!tokenName) return '';
+          if (cache.has(tokenName)) return cache.get(tokenName);
+          if (stack.has(tokenName)) return '';
+          stack.add(tokenName);
+
+          const raw = getTokenValue(tokenName);
+          if (!raw) {
+            cache.set(tokenName, '');
+            stack.delete(tokenName);
+            return '';
+          }
+
+          const trimmed = raw.trim();
+          const resolved = resolveCssString(trimmed, (name, nextStack) => resolve(name, nextStack), stack);
+          cache.set(tokenName, resolved);
+          stack.delete(tokenName);
+          return resolved;
+        }
+
+        return resolve;
+      }
+
+      function resolveCssString(value, resolver, stack) {
+        if (!value) return '';
+        if (!value.includes('var(')) return value;
+
+        const varPattern = /var\((--[^),\s]+)(?:\s*,\s*([^)]+))?\)/g;
+        return value.replace(varPattern, (_, tokenName, fallback) => {
+          const resolved = resolver(tokenName, new Set(stack));
+          if (resolved) return resolved;
+          return fallback ? resolveCssString(fallback, resolver, stack) : '';
+        }).trim();
+      }
+
+      function createIconLoader({ basePaths = [], size = 16 } = {}) {
+        const cache = new Map();
+        const pending = new Map();
+        const parser = typeof DOMParser !== 'undefined' ? new DOMParser() : null;
+
+        return {
+          getMarkup(iconName, requestUpdate, options = {}) {
+            if (!iconName) return '';
+            const sizeOverride = Number.isFinite(options.size) && options.size > 0 ? Number(options.size) : null;
+            const cacheKey = sizeOverride ? `${iconName}::${sizeOverride}` : iconName;
+            if (cache.has(cacheKey)) return cache.get(cacheKey);
+            if (!pending.has(cacheKey)) {
+              const promise = fetchIcon(iconName, sizeOverride)
+                .then(markup => {
+                  if (markup) {
+                    cache.set(cacheKey, markup);
+                    if (typeof requestUpdate === 'function') {
+                      requestUpdate();
+                    }
+                  }
+                  return markup;
+                })
+                .catch(error => {
+                  console.warn(`Unable to load icon ${iconName}`, error);
+                  return '';
+                })
+                .finally(() => {
+                  pending.delete(cacheKey);
+                });
+              pending.set(cacheKey, promise);
+            }
+            return '';
+          }
+        };
+
+        async function fetchIcon(iconName, overrideSize) {
+          const fileName = iconName.endsWith('.svg') ? iconName : `${iconName}.svg`;
+          for (const basePath of basePaths) {
+            const url = `${basePath}${fileName}`;
+            try {
+              const response = await fetch(url, { cache: 'no-store' });
+              if (!response.ok) continue;
+              const raw = await response.text();
+              const sanitized = sanitizeSvg(raw, overrideSize);
+              if (sanitized) return sanitized;
+            } catch (error) {
+              console.warn(`Unable to fetch icon at ${url}`, error);
+            }
+          }
+          return '';
+        }
+
+        function sanitizeSvg(raw, overrideSize) {
+          if (!raw || !parser) return '';
+          const doc = parser.parseFromString(raw, 'image/svg+xml');
+          if (doc.querySelector('parsererror')) return '';
+          const svg = doc.querySelector('svg');
+          if (!svg) return '';
+          svg.querySelectorAll('script').forEach(script => script.remove());
+          const comments = [];
+          const walker = document.createTreeWalker(svg, NodeFilter.SHOW_COMMENT, null);
+          while (walker.nextNode()) {
+            comments.push(walker.currentNode);
+          }
+          comments.forEach(comment => comment.remove());
+          const targetSize = Number.isFinite(overrideSize) && overrideSize > 0 ? overrideSize : size;
+          svg.setAttribute('width', String(targetSize));
+          svg.setAttribute('height', String(targetSize));
+          svg.setAttribute('aria-hidden', 'true');
+          svg.setAttribute('focusable', 'false');
+          svg.removeAttribute('alt');
+          if (!svg.getAttribute('fill')) {
+            svg.setAttribute('fill', 'currentColor');
+          }
+          svg.setAttribute('style', 'display: block;');
+          return svg.outerHTML;
+        }
+      }
+
+      function createColorProbe() {
+        const probe = document.createElement('span');
+        probe.style.position = 'absolute';
+        probe.style.visibility = 'hidden';
+        probe.style.pointerEvents = 'none';
+        probe.style.width = '0';
+        probe.style.height = '0';
+        probe.style.opacity = '0';
+        document.body.appendChild(probe);
+        return probe;
+      }
+
+      function createColorFormatter(probe) {
+        return function ensureColor(value) {
+          const trimmed = (value || '').trim();
+          if (!trimmed) return trimmed;
+          if (/gradient\(/i.test(trimmed) || isGradientToken(trimmed)) {
+            return trimmed;
+          }
+          probe.style.color = '';
+          probe.style.color = trimmed;
+          const computed = getComputedStyle(probe).color;
+          if (!computed) return trimmed;
+          const match = computed.match(/^rgba?\(([^)]+)\)$/i);
+          if (!match) return trimmed;
+          const parts = match[1].split(',').map(part => part.trim());
+          if (parts.length < 3) return trimmed;
+          const alpha = parts[3];
+          if (alpha && Number(alpha) < 1) {
+            return `rgba(${parts.join(', ')})`;
+          }
+          const [r, g, b] = parts.slice(0, 3).map(Number);
+          if ([r, g, b].some(Number.isNaN)) {
+            return trimmed;
+          }
+          return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+        };
+      }
+
+      function isGradientToken(value) {
+        switch (value) {
+          case '--prism-gradient-background-intelligence-default':
+          case '--prism-gradient-background-intelligence-subdued':
+          case '--prism-gradient-background-brand-default':
+          case '--prism-gradient-background-brand-subdued':
+            return true;
+          default:
+            return false;
+        }
+      }
+
+      function toHex(value) {
+        return Math.max(0, Math.min(255, value)).toString(16).padStart(2, '0');
+      }
+
+      function escapeHtml(value) {
+        const safe = String(value ?? '');
+        return safe.replace(/[&<>"']/g, char => {
+          switch (char) {
+            case '&':
+              return '&amp;';
+            case '<':
+              return '&lt;';
+            case '>':
+              return '&gt;';
+            case '"':
+              return '&quot;';
+            case '\'':
+              return '&#39;';
+            default:
+              return char;
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>

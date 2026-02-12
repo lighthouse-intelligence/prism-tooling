@@ -1,0 +1,7 @@
+.identifier-bullet {
+  border-radius: var(--border-radius-circle);
+  display: inline-block;
+  margin-right: var(--prism-spacing-200);
+  min-height: 8px;
+  min-width: 8px;
+}

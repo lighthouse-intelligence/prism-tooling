@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-prism-asset-base="vendor/prism-foundation">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Color Palettes Explorer - Browse Prism design system color scales and chart palettes" />
+  <meta name="keywords" content="color palettes, design system, prism, colors, alpha, chart" />
+  <meta name="author" content="Prism Design System" />
+  
+  <title>Prism Color Palettes</title>
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.css" />
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.dark.css" />
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.highcontrast-light.css" />
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.highcontrast-dark.css" />
+  <link rel="stylesheet" href="../styles/global.css" />
+</head>
+
+<body class="tokens-explorer palettes-explorer">
+  <div class="prism-logo" aria-hidden="true">
+    <a href="../index.html">
+      <svg width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity=".5" d="M4 4h13a9 9 0 1 1 0 18H4V4Z" fill="currentColor" />
+        <path opacity=".5" d="M4 4h8v24H4zm27 0h13a9 9 0 1 1 0 18H31V4Z" fill="currentColor" />
+        <path opacity=".5" d="m31 4 21 24H31V4Zm27 0h8v24h-8zm34 16H76c0-8.837 7.163-16 16-16v16Z" fill="currentColor" />
+        <path opacity=".5" d="M71 12h16c0 8.837-7.163 16-16 16V12Zm26-8 24 24H97V4Z" fill="currentColor" />
+        <path opacity=".5" d="M121 4 97 28h24V4Z" fill="currentColor" />
+      </svg>
+    </a>
+  </div>
+  <main>
+    <section class="prism-widget" id="palettes-card">
+      <header>
+        <h2>Color palettes</h2>
+        <div class="controls">
+          <select id="theme-selector" class="prism-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="highcontrast-light">High Contrast Light</option>
+            <option value="highcontrast-dark">High Contrast Dark</option>
+          </select>
+        </div>
+      </header>
+      <div class="prism-main prism-widget__body">
+        <div class="prism-widget__content palettes-content">
+          <div id="palette-grid" class="palette-table" role="region" aria-live="polite">
+            <!-- Palette rows injected dynamically -->
+          </div>
+
+          <div id="loading-state" class="loading-state" style="display: none;">
+            <div class="loading-spinner"></div>
+            <p>Loading color palettes...</p>
+          </div>
+
+          <div id="empty-state" class="empty-state" style="display: none;">
+            <h3>No palette data available</h3>
+            <p>Try switching palette type or theme.</p>
+          </div>
+        </div>
+        <nav class="prism-widget__sidebar tokens-sidenav" id="palettes-sidenav" aria-label="Palette types">
+          <div class="tokens-sidenav__inner">
+            <ul class="prism-view-switcher-list palette-nav__tabs">
+              <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category is-active" data-category="general" role="button">General</a></li>
+              <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-category="alpha" role="button">Alpha</a></li>
+              <li><a href="#" class="tokens-sidenav__link tokens-sidenav__link--category" data-category="chart" role="button">Chart</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <div id="copy-notification" class="copy-notification" style="display: none;">
+    <span id="copy-message">Palette value copied to clipboard!</span>
+  </div>
+
+  <script type="module" src="../js/palettes-init.js"></script>
+</body>
+</html>

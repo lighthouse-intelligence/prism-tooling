@@ -1,0 +1,561 @@
+{
+  "prism": {
+    "internal": {
+      "typography": {
+        "bold": {
+          "font": {
+            "weight": {
+              "$value": "700"
+            }
+          }
+        },
+        "medium": {
+          "font": {
+            "weight": {
+              "$value": "500"
+            }
+          }
+        },
+        "regular": {
+          "font": {
+            "weight": {
+              "$value": "400"
+            }
+          }
+        },
+        "semi": {
+          "bold": {
+            "font": {
+              "weight": {
+                "$value": "600"
+              }
+            }
+          }
+        }
+      }
+    },
+    "typography": {
+      "default": {
+        "font": {
+          "family": {
+            "$value": "'Inter', sans-serif"
+          }
+        }
+      },
+      "heading": {
+        "1": {
+          "font": {
+            "size": {
+              "$value": "28px"
+            },
+            "weight": {
+              "$value": "{prism.internal.typography.bold.font.weight}"
+            }
+          },
+          "line": {
+            "height": {
+              "$value": "36px"
+            }
+          }
+        },
+        "2": {
+          "font": {
+            "size": {
+              "$value": "20px"
+            },
+            "weight": {
+              "$value": "{prism.internal.typography.semi.bold.font.weight}"
+            }
+          },
+          "line": {
+            "height": {
+              "$value": "28px"
+            }
+          }
+        },
+        "3": {
+          "font": {
+            "size": {
+              "$value": "16px"
+            },
+            "weight": {
+              "$value": "{prism.internal.typography.semi.bold.font.weight}"
+            }
+          },
+          "line": {
+            "height": {
+              "$value": "24px"
+            }
+          }
+        },
+        "4": {
+          "font": {
+            "size": {
+              "$value": "14px"
+            },
+            "weight": {
+              "$value": "{prism.internal.typography.semi.bold.font.weight}"
+            }
+          },
+          "line": {
+            "height": {
+              "$value": "20px"
+            }
+          }
+        }
+      },
+      "paragraph": {
+        "200": {
+          "bold": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.paragraph.200.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.bold.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.paragraph.200.regular.line.height}"
+              }
+            }
+          },
+          "medium": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.paragraph.200.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.medium.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.paragraph.200.regular.line.height}"
+              }
+            }
+          },
+          "regular": {
+            "font": {
+              "size": {
+                "$value": "12px"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.regular.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "18px"
+              }
+            }
+          },
+          "semi": {
+            "bold": {
+              "font": {
+                "size": {
+                  "$value": "{prism.typography.paragraph.200.regular.font.size}"
+                },
+                "weight": {
+                  "$value": "{prism.internal.typography.semi.bold.font.weight}"
+                }
+              },
+              "line": {
+                "height": {
+                  "$value": "{prism.typography.paragraph.200.regular.line.height}"
+                }
+              }
+            }
+          }
+        },
+        "300": {
+          "bold": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.paragraph.300.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.bold.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.paragraph.300.regular.line.height}"
+              }
+            }
+          },
+          "medium": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.paragraph.300.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.medium.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.paragraph.300.regular.line.height}"
+              }
+            }
+          },
+          "regular": {
+            "font": {
+              "size": {
+                "$value": "14px"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.regular.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "20px"
+              }
+            }
+          },
+          "semi": {
+            "bold": {
+              "font": {
+                "size": {
+                  "$value": "{prism.typography.paragraph.300.regular.font.size}"
+                },
+                "weight": {
+                  "$value": "{prism.internal.typography.semi.bold.font.weight}"
+                }
+              },
+              "line": {
+                "height": {
+                  "$value": "{prism.typography.paragraph.300.regular.line.height}"
+                }
+              }
+            }
+          }
+        },
+        "400": {
+          "bold": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.paragraph.400.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.bold.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.paragraph.400.regular.line.height}"
+              }
+            }
+          },
+          "medium": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.paragraph.400.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.medium.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.paragraph.400.regular.line.height}"
+              }
+            }
+          },
+          "regular": {
+            "font": {
+              "size": {
+                "$value": "16px"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.regular.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "24px"
+              }
+            }
+          },
+          "semi": {
+            "bold": {
+              "font": {
+                "size": {
+                  "$value": "{prism.typography.paragraph.400.regular.font.size}"
+                },
+                "weight": {
+                  "$value": "{prism.internal.typography.semi.bold.font.weight}"
+                }
+              },
+              "line": {
+                "height": {
+                  "$value": "{prism.typography.paragraph.400.regular.line.height}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "text": {
+        "200": {
+          "bold": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.text.200.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.bold.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.text.200.regular.line.height}"
+              }
+            }
+          },
+          "medium": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.text.200.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.medium.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.text.200.regular.line.height}"
+              }
+            }
+          },
+          "regular": {
+            "font": {
+              "size": {
+                "$value": "12px"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.regular.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "16px"
+              }
+            }
+          },
+          "semi": {
+            "bold": {
+              "font": {
+                "size": {
+                  "$value": "{prism.typography.text.200.regular.font.size}"
+                },
+                "weight": {
+                  "$value": "{prism.internal.typography.semi.bold.font.weight}"
+                }
+              },
+              "line": {
+                "height": {
+                  "$value": "{prism.typography.text.200.regular.line.height}"
+                }
+              }
+            }
+          }
+        },
+        "300": {
+          "bold": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.text.300.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.bold.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.text.300.regular.line.height}"
+              }
+            }
+          },
+          "medium": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.text.300.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.medium.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.text.300.regular.line.height}"
+              }
+            }
+          },
+          "regular": {
+            "font": {
+              "size": {
+                "$value": "14px"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.regular.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "18px"
+              }
+            }
+          },
+          "semi": {
+            "bold": {
+              "font": {
+                "size": {
+                  "$value": "{prism.typography.text.300.regular.font.size}"
+                },
+                "weight": {
+                  "$value": "{prism.internal.typography.semi.bold.font.weight}"
+                }
+              },
+              "line": {
+                "height": {
+                  "$value": "{prism.typography.text.300.regular.line.height}"
+                }
+              }
+            }
+          }
+        },
+        "400": {
+          "bold": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.text.400.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.bold.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.text.400.regular.line.height}"
+              }
+            }
+          },
+          "medium": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.text.400.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.medium.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.text.400.regular.line.height}"
+              }
+            }
+          },
+          "regular": {
+            "font": {
+              "size": {
+                "$value": "16px"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.regular.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "20px"
+              }
+            }
+          },
+          "semi": {
+            "bold": {
+              "font": {
+                "size": {
+                  "$value": "{prism.typography.text.400.regular.font.size}"
+                },
+                "weight": {
+                  "$value": "{prism.internal.typography.semi.bold.font.weight}"
+                }
+              },
+              "line": {
+                "height": {
+                  "$value": "{prism.typography.text.400.regular.line.height}"
+                }
+              }
+            }
+          }
+        },
+        "500": {
+          "bold": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.text.500.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.bold.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.text.500.regular.line.height}"
+              }
+            }
+          },
+          "medium": {
+            "font": {
+              "size": {
+                "$value": "{prism.typography.text.500.regular.font.size}"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.medium.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "{prism.typography.text.500.regular.line.height}"
+              }
+            }
+          },
+          "regular": {
+            "font": {
+              "size": {
+                "$value": "20px"
+              },
+              "weight": {
+                "$value": "{prism.internal.typography.regular.font.weight}"
+              }
+            },
+            "line": {
+              "height": {
+                "$value": "24px"
+              }
+            }
+          },
+          "semi": {
+            "bold": {
+              "font": {
+                "size": {
+                  "$value": "{prism.typography.text.500.regular.font.size}"
+                },
+                "weight": {
+                  "$value": "{prism.internal.typography.semi.bold.font.weight}"
+                }
+              },
+              "line": {
+                "height": {
+                  "$value": "{prism.typography.text.500.regular.line.height}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

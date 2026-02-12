@@ -1,0 +1,251 @@
+.prism-button {
+  --button-height: var(--prism-spacing-800);
+
+  align-items: center;
+  background-color: unset;
+  border: none;
+  border-radius: var(--border-radius-100);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: var(--prism-typography-text-300-medium-font-size);
+  font-weight: var(--prism-typography-text-300-medium-font-weight);
+  height: var(--button-height);
+  justify-content: center;
+  line-height: var(--prism-typography-text-300-medium-line-height);
+  outline: 2px solid transparent;
+  outline-offset: var(--prism-spacing-50);
+  padding: 0 var(--prism-spacing-200);
+  transition: all 0.12s ease-out;
+}
+
+.prism-button:disabled {
+  background: unset;
+  color: var(--prism-color-interactive-text-disabled);
+  cursor: not-allowed;
+}
+
+.prism-button:enabled:active,
+.prism-button:enabled[data-test-pseudo="active"] {
+  box-shadow: var(--prism-shadow-neutral-inset);
+}
+
+.prism-button:enabled:focus-visible,
+.prism-button:enabled[data-test-pseudo="focus"] {
+  outline-color: var(--prism-color-interactive-border-focus);
+}
+
+.prism-button:disabled:not(
+    .prism-button--ghost,
+    .prism-button--critical-secondary
+  ) {
+  background-color: var(--prism-color-interactive-background-disabled);
+  color: var(--prism-color-interactive-text-disabled);
+}
+
+.prism-button--primary {
+  background-color: var(--prism-color-interactive-background-primary-idle);
+  color: var(--prism-color-text-inverse);
+  outline-offset: var(--prism-spacing-50);
+}
+
+.prism-button--primary:enabled:hover,
+.prism-button--primary:enabled[data-test-pseudo="hover"] {
+  background-color: var(--prism-color-interactive-background-primary-hover);
+}
+
+.prism-button--primary:enabled:active,
+.prism-button--primary:enabled[data-test-pseudo="active"] {
+  background-color: var(--prism-color-interactive-background-primary-pressed);
+}
+
+.prism-button--secondary {
+  background-color: var(--prism-color-interactive-background-secondary-idle);
+  color: var(--prism-color-text-neutral-default);
+}
+
+.prism-button--secondary:enabled:hover,
+.prism-button--secondary:enabled[data-test-pseudo="hover"] {
+  background-color: var(--prism-color-interactive-background-secondary-hover);
+}
+
+.prism-button--secondary:enabled:active,
+.prism-button--secondary:enabled[data-test-pseudo="active"] {
+  background-color: var(--prism-color-interactive-background-secondary-pressed);
+}
+
+.prism-button--critical {
+  background-color: var(--prism-color-interactive-background-critical-idle);
+  color: var(--prism-color-text-inverse);
+}
+
+.prism-button--critical:enabled:hover,
+.prism-button--critical:enabled[data-test-pseudo="hover"] {
+  background-color: var(--prism-color-interactive-background-critical-hover);
+}
+
+.prism-button--critical:enabled:active,
+.prism-button--critical:enabled[data-test-pseudo="active"] {
+  background-color: var(--prism-color-interactive-background-critical-pressed);
+}
+
+.prism-button--critical-secondary {
+  color: var(--prism-color-text-critical-default);
+}
+
+.prism-button--critical-secondary:enabled:hover,
+.prism-button--critical-secondary:enabled[data-test-pseudo="hover"] {
+  background-color: var(--prism-color-interactive-background-ghost-hover);
+}
+
+.prism-button--critical-secondary:enabled:active,
+.prism-button--critical-secondary:enabled[data-test-pseudo="active"] {
+  background-color: var(--prism-color-interactive-background-ghost-pressed);
+  box-shadow: none;
+}
+
+.prism-button--warning {
+  background-color: var(--prism-color-interactive-background-warning-idle);
+  color: var(--prism-color-text-warning-emphasis);
+}
+
+.prism-button--warning:enabled:hover,
+.prism-button--warning:enabled[data-test-pseudo="hover"] {
+  background-color: var(--prism-color-interactive-background-warning-hover);
+}
+
+.prism-button--warning:enabled:active,
+.prism-button--warning:enabled[data-test-pseudo="active"] {
+  background-color: var(--prism-color-interactive-background-warning-pressed);
+}
+
+.prism-button--success {
+  background-color: var(--prism-color-interactive-background-success-idle);
+  color: var(--prism-color-text-inverse);
+}
+
+.prism-button--success:enabled:hover,
+.prism-button--success:enabled[data-test-pseudo="hover"] {
+  background-color: var(--prism-color-interactive-background-success-hover);
+}
+
+.prism-button--success:enabled:active,
+.prism-button--success:enabled[data-test-pseudo="active"] {
+  background-color: var(--prism-color-interactive-background-success-pressed);
+}
+
+.prism-button--ghost {
+  color: var(--prism-color-text-neutral-default);
+}
+
+.prism-button--ghost:enabled:hover,
+.prism-button--ghost:enabled[data-test-pseudo="hover"] {
+  background-color: var(--prism-color-interactive-background-ghost-hover);
+}
+
+.prism-button--ghost:enabled:active,
+.prism-button--ghost:enabled[data-test-pseudo="active"] {
+  background-color: var(--prism-color-interactive-background-ghost-pressed);
+  box-shadow: none;
+}
+
+.prism-button--intelligence {
+  background: var(
+    --prism-gradient-interactive-background-intelligence-primary-idle
+  );
+  color: var(--prism-color-text-inverse);
+}
+
+.prism-button--intelligence:enabled:hover,
+.prism-button--intelligence:enabled[data-test-pseudo="hover"] {
+  background: var(
+    --prism-gradient-interactive-background-intelligence-primary-hover
+  );
+}
+
+.prism-button--intelligence:enabled:active,
+.prism-button--intelligence:enabled[data-test-pseudo="active"] {
+  background: var(
+    --prism-gradient-interactive-background-intelligence-primary-pressed
+  );
+}
+
+.prism-button--intelligence-secondary {
+  background: var(
+    --prism-gradient-interactive-background-intelligence-secondary-idle
+  );
+  color: var(--prism-color-text-intelligence-emphasis);
+}
+
+.prism-button--intelligence-secondary:enabled:hover,
+.prism-button--intelligence-secondary:enabled[data-test-pseudo="hover"] {
+  background: var(
+    --prism-gradient-interactive-background-intelligence-secondary-hover
+  );
+}
+
+.prism-button--intelligence-secondary:enabled:active,
+.prism-button--intelligence-secondary:enabled[data-test-pseudo="active"] {
+  background: var(
+    --prism-gradient-interactive-background-intelligence-secondary-pressed
+  );
+}
+
+.prism-button--brand {
+  background-color: var(
+    --prism-gradient-interactive-background-brand-primary-hover
+  );
+  background-image: var(--gradient-brand-figure);
+  color: var(--prism-color-text-inverse);
+}
+
+.prism-button--brand:enabled:hover,
+.prism-button--brand:enabled[data-test-pseudo="hover"] {
+  background: var(--prism-gradient-interactive-background-brand-primary-hover);
+}
+
+.prism-button--brand:enabled:active,
+.prism-button--brand:enabled[data-test-pseudo="active"] {
+  background: var(
+    --prism-gradient-interactive-background-brand-primary-pressed
+  );
+}
+
+.prism-button--small {
+  --button-height: var(--prism-spacing-600);
+
+  font-size: var(--prism-typography-text-200-medium-font-size);
+  font-weight: var(--prism-typography-text-200-medium-font-weight);
+  line-height: var(--prism-typography-text-200-medium-line-height);
+
+  /* We make spacing exception for the small buttons (mainly for the save/delete favourite buttons in RI) */
+  padding: 0 var(--prism-spacing-200);
+}
+
+.prism-button--large {
+  --button-height: var(--prism-spacing-1000);
+
+  padding: 0 var(--prism-spacing-300);
+}
+
+/* reduced padding to make button square if only icon is present */
+.prism-button--icon-only {
+  width: var(--button-height);
+}
+
+.prism-button--unstyled {
+  background: none;
+  border: none;
+  color: var(--prism-color-text-neutral-default);
+  cursor: pointer;
+  padding: 0;
+}
+
+.prism-button--unstyled:active,
+.prism-button--unstyled[data-test-pseudo="active"] {
+  box-shadow: none;
+}
+
+.prism-button.prism-button--icon-only {
+  width: var(--button-height);
+}

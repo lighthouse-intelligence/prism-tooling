@@ -1,0 +1,256 @@
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+
+    /* 
+     * The font is copied from node_modules and referenced relatively to provide maximum compatibility
+     * with different build tools and how they handle importing from node_modules inside of css
+     */
+    src:
+      url("../../fonts/Inter-Regular.woff2") format("woff2"),
+      url("../../fonts/Inter-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    src:
+      url("../../fonts/Inter-Medium.woff2") format("woff2"),
+      url("../../fonts/Inter-Medium.woff") format("woff");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    src:
+      url("../../fonts/Inter-SemiBold.woff2") format("woff2"),
+      url("../../fonts/Inter-SemiBold.woff") format("woff");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    src:
+      url("../../fonts/Inter-Bold.woff2") format("woff2"),
+      url("../../fonts/Inter-Bold.woff") format("woff");
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url("../../fonts/Inter.var.woff2") format("woff2");
+  }
+}
+
+html {
+  font-family: Inter, system-ui;
+}
+
+h1,
+.heading-1 {
+  font-size: var(--prism-typography-heading-1-font-size);
+  font-weight: var(--prism-typography-heading-1-font-weight);
+  line-height: var(--prism-typography-heading-1-line-height);
+}
+
+h2,
+.heading-2 {
+  font-size: var(--prism-typography-heading-2-font-size);
+  font-weight: var(--prism-typography-heading-2-font-weight);
+  line-height: var(--prism-typography-heading-2-line-height);
+}
+
+h3,
+.heading-3 {
+  font-size: var(--prism-typography-heading-3-font-size);
+  font-weight: var(--prism-typography-heading-3-font-weight);
+  line-height: var(--prism-typography-heading-3-line-height);
+}
+
+h4,
+.heading-4 {
+  font-size: var(--prism-typography-heading-4-font-size);
+  font-weight: var(--prism-typography-heading-4-font-weight);
+  line-height: var(--prism-typography-heading-4-line-height);
+}
+
+.text-500--regular {
+  font-size: var(--prism-typography-text-500-regular-font-size);
+  font-weight: var(--prism-typography-text-500-regular-font-weight);
+  line-height: var(--prism-typography-text-500-regular-line-height);
+}
+
+.text-500--medium {
+  font-size: var(--prism-typography-text-500-medium-font-size);
+  font-weight: var(--prism-typography-text-500-medium-font-weight);
+  line-height: var(--prism-typography-text-500-medium-line-height);
+}
+
+.text-500--semi-bold {
+  font-size: var(--prism-typography-text-500-semi-bold-font-size);
+  font-weight: var(--prism-typography-text-500-semi-bold-font-weight);
+  line-height: var(--prism-typography-text-500-semi-bold-line-height);
+}
+
+.text-500--bold {
+  font-size: var(--prism-typography-text-500-bold-font-size);
+  font-weight: var(--prism-typography-text-500-bold-font-weight);
+  line-height: var(--prism-typography-text-500-bold-line-height);
+}
+
+.text-400--regular {
+  font-size: var(--prism-typography-text-400-regular-font-size);
+  font-weight: var(--prism-typography-text-400-regular-font-weight);
+  line-height: var(--prism-typography-text-400-regular-line-height);
+}
+
+.text-400--medium {
+  font-size: var(--prism-typography-text-400-medium-font-size);
+  font-weight: var(--prism-typography-text-400-medium-font-weight);
+  line-height: var(--prism-typography-text-400-medium-line-height);
+}
+
+.text-400--semi-bold {
+  font-size: var(--prism-typography-text-400-semi-bold-font-size);
+  font-weight: var(--prism-typography-text-400-semi-bold-font-weight);
+  line-height: var(--prism-typography-text-400-semi-bold-line-height);
+}
+
+.text-400--bold {
+  font-size: var(--prism-typography-text-400-bold-font-size);
+  font-weight: var(--prism-typography-text-400-bold-font-weight);
+  line-height: var(--prism-typography-text-400-bold-line-height);
+}
+
+.text-300--regular {
+  font-size: var(--prism-typography-text-300-regular-font-size);
+  font-weight: var(--prism-typography-text-300-regular-font-weight);
+  line-height: var(--prism-typography-text-300-regular-line-height);
+}
+
+.text-300--medium {
+  font-size: var(--prism-typography-text-300-medium-font-size);
+  font-weight: var(--prism-typography-text-300-medium-font-weight);
+  line-height: var(--prism-typography-text-300-medium-line-height);
+}
+
+.text-300--semi-bold {
+  font-size: var(--prism-typography-text-300-semi-bold-font-size);
+  font-weight: var(--prism-typography-text-300-semi-bold-font-weight);
+  line-height: var(--prism-typography-text-300-semi-bold-line-height);
+}
+
+.text-300--bold {
+  font-size: var(--prism-typography-text-300-bold-font-size);
+  font-weight: var(--prism-typography-text-300-bold-font-weight);
+  line-height: var(--prism-typography-text-300-bold-line-height);
+}
+
+.text-200--regular {
+  font-size: var(--prism-typography-text-200-regular-font-size);
+  font-weight: var(--prism-typography-text-200-regular-font-weight);
+  line-height: var(--prism-typography-text-200-regular-line-height);
+}
+
+.text-200--medium {
+  font-size: var(--prism-typography-text-200-medium-font-size);
+  font-weight: var(--prism-typography-text-200-medium-font-weight);
+  line-height: var(--prism-typography-text-200-medium-line-height);
+}
+
+.text-200--semi-bold {
+  font-size: var(--prism-typography-text-200-semi-bold-font-size);
+  font-weight: var(--prism-typography-text-200-semi-bold-font-weight);
+  line-height: var(--prism-typography-text-200-semi-bold-line-height);
+}
+
+.text-200--bold {
+  font-size: var(--prism-typography-text-200-bold-font-size);
+  font-weight: var(--prism-typography-text-200-bold-font-weight);
+  line-height: var(--prism-typography-text-200-bold-line-height);
+}
+
+.paragraph-400--regular {
+  font-size: var(--prism-typography-paragraph-400-regular-font-size);
+  font-weight: var(--prism-typography-paragraph-400-regular-font-weight);
+  line-height: var(--prism-typography-paragraph-400-regular-line-height);
+}
+
+.paragraph-400--medium {
+  font-size: var(--prism-typography-paragraph-400-medium-font-size);
+  font-weight: var(--prism-typography-paragraph-400-medium-font-weight);
+  line-height: var(--prism-typography-paragraph-400-medium-line-height);
+}
+
+.paragraph-400--semi-bold {
+  font-size: var(--prism-typography-paragraph-400-semi-bold-font-size);
+  font-weight: var(--prism-typography-paragraph-400-semi-bold-font-weight);
+  line-height: var(--prism-typography-paragraph-400-semi-bold-line-height);
+}
+
+.paragraph-400--bold {
+  font-size: var(--prism-typography-paragraph-400-bold-font-size);
+  font-weight: var(--prism-typography-paragraph-400-bold-font-weight);
+  line-height: var(--prism-typography-paragraph-400-bold-line-height);
+}
+
+.paragraph-300--regular {
+  font-size: var(--prism-typography-paragraph-300-regular-font-size);
+  font-weight: var(--prism-typography-paragraph-300-regular-font-weight);
+  line-height: var(--prism-typography-paragraph-300-regular-line-height);
+}
+
+.paragraph-300--medium {
+  font-size: var(--prism-typography-paragraph-300-medium-font-size);
+  font-weight: var(--prism-typography-paragraph-300-medium-font-weight);
+  line-height: var(--prism-typography-paragraph-300-medium-line-height);
+}
+
+.paragraph-300--semi-bold {
+  font-size: var(--prism-typography-paragraph-300-semi-bold-font-size);
+  font-weight: var(--prism-typography-paragraph-300-semi-bold-font-weight);
+  line-height: var(--prism-typography-paragraph-300-semi-bold-line-height);
+}
+
+.paragraph-300--bold {
+  font-size: var(--prism-typography-paragraph-300-bold-font-size);
+  font-weight: var(--prism-typography-paragraph-300-bold-font-weight);
+  line-height: var(--prism-typography-paragraph-300-bold-line-height);
+}
+
+.paragraph-200--regular {
+  font-size: var(--prism-typography-paragraph-200-regular-font-size);
+  font-weight: var(--prism-typography-paragraph-200-regular-font-weight);
+  line-height: var(--prism-typography-paragraph-200-regular-line-height);
+}
+
+.paragraph-200--medium {
+  font-size: var(--prism-typography-paragraph-200-medium-font-size);
+  font-weight: var(--prism-typography-paragraph-200-medium-font-weight);
+  line-height: var(--prism-typography-paragraph-200-medium-line-height);
+}
+
+.paragraph-200--semi-bold {
+  font-size: var(--prism-typography-paragraph-200-semi-bold-font-size);
+  font-weight: var(--prism-typography-paragraph-200-semi-bold-font-weight);
+  line-height: var(--prism-typography-paragraph-200-semi-bold-line-height);
+}
+
+.paragraph-200--bold {
+  font-size: var(--prism-typography-paragraph-200-bold-font-size);
+  font-weight: var(--prism-typography-paragraph-200-bold-font-weight);
+  line-height: var(--prism-typography-paragraph-200-bold-line-height);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-prism-asset-base="vendor/prism-foundation">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Design Tokens Browser - Browse and copy all design tokens from the Prism design system across different themes and categories" />
+  <meta name="keywords" content="design tokens, design system, prism, themes, variables, export" />
+  <meta name="author" content="Prism Design System" />
+  
+  <title>Prism Design Tokens Browser</title>
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.css" />
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.dark.css" />
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.highcontrast-light.css" />
+  <link rel="stylesheet" href="../vendor/prism-foundation/styles/lib/tokens.highcontrast-dark.css" />
+  <link rel="stylesheet" href="../styles/global.css" />
+
+</head>
+
+<body class="tokens-explorer">
+  <div class="prism-logo" aria-hidden="true">
+    <a href="../index.html">
+      <svg width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path opacity=".5" d="M4 4h13a9 9 0 1 1 0 18H4V4Z" fill="currentColor" />
+       <path opacity=".5" d="M4 4h8v24H4zm27 0h13a9 9 0 1 1 0 18H31V4Z" fill="currentColor" />
+       <path opacity=".5" d="m31 4 21 24H31V4Zm27 0h8v24h-8zm34 16H76c0-8.837 7.163-16 16-16v16Z" fill="currentColor" />
+       <path opacity=".5" d="M71 12h16c0 8.837-7.163 16-16 16V12Zm26-8 24 24H97V4Z" fill="currentColor" />
+       <path opacity=".5" d="M121 4 97 28h24V4Z" fill="currentColor" />
+      </svg>
+    </a>
+  </div>
+  <main>
+    <section class="prism-widget" id="tokens-card">
+      <header>
+        <h2>Design tokens</h2>
+        <div class="controls">
+          <input type="text" id="token-search" placeholder="Search for tokens" class="prism-input" />
+          <select id="theme-selector" class="prism-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="highcontrast-light">High Contrast Light</option>
+            <option value="highcontrast-dark">High Contrast Dark</option>
+          </select>
+        </div>
+      </header>
+      <div class="prism-main prism-widget__body">
+          <div class="prism-widget__content tokens-content">
+          <div id="token-list" class="token-grid">
+                    <!-- Tokens will be rendered here -->
+          </div>
+          
+          <!-- Loading state -->
+          <div id="loading-state" class="loading-state" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <p>Loading design tokens...</p>
+          </div>
+          
+          <!-- Empty state -->
+          <div id="empty-state" class="empty-state" style="display: none;">
+                    <h3>No tokens found</h3>
+                    <p>Try adjusting your search or selecting a different category.</p>
+          </div>
+          </div>
+          <nav class="prism-widget__sidebar tokens-sidenav" id="tokens-sidenav">
+            <!-- Side nav links injected dynamically -->
+          </nav>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success notification -->
+  <div id="copy-notification" class="copy-notification" style="display: none;">
+    <span id="copy-message">Token copied to clipboard!</span>
+  </div>
+
+  <script type="module">
+    import { TokenExplorerApp } from '../js/TokenExplorerApp.js';
+    
+    // Initialize the tokens explorer when DOM is ready
+    document.addEventListener('DOMContentLoaded', async () => {
+      const app = new TokenExplorerApp();
+      await app.init();
+    });
+  </script>
+</body>
+</html>
