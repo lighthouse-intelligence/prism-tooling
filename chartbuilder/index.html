@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lux Chartbuilder</title>
+    <link rel="icon" type="image/svg+xml" href="/prism-tooling/chartbuilder/assets/favicon-_sJKghLE.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; script-src 'self';" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" crossorigin="anonymous" />
+  <script type="module" crossorigin src="/prism-tooling/chartbuilder/assets/index-BX5fMsiP.js"></script>
+  <link rel="stylesheet" crossorigin href="/prism-tooling/chartbuilder/assets/index-C3G7VgSM.css">
+</head>
+
+<body id="wrapper">
+    <aside id="sidebar">
+        <div id="logo" class="widget">
+            <img src="/prism-tooling/chartbuilder/assets/logo-I3LPYMnN.svg" />
+            <h3>Lux charts</h3>
+        </div>
+        <div id="settings" class="widget">
+            <div class="widget-header">
+                <h3>Settings</h3>
+            </div>
+            <div class="widget-body">
+                <div class="prism-input prism-input--no-padding  mb-200">
+                    <div class="prism-input__wrapper customSelect">
+                        <select id="themeSelect">
+                            <option value="CategoricalLight">Categorical - Light</option>
+                            <option value="CategoricalDark">Categorical - Dark</option>
+                            <option value="SequentialLight">Sequential - Light</option>
+                            <option value="SequentialDark">Sequential - Dark</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="one-liner">
+                    <div class="prism-input">
+                        <div class="prism-input__wrapper">
+                            <span class="inline-label text-300--regular">W</span>
+                            <input type="number" id="chartWidth" min="100" max="3000" value="1200" />
+                        </div>
+                    </div>
+                    <div class="prism-input">
+                        <div class="prism-input__wrapper">
+                            <span class="inline-label text-300--regular">H</span>
+                            <input type="number" id="chartHeight" min="100" max="2000" value="450" />
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mb-200">Chart type</h4>
+                <div class="prism-input prism-input--no-padding  mb-200">
+                    <div class="prism-input__wrapper customSelect">
+                        <select id="chartTypeSelect">
+                            <option value="column">Column</option>
+                            <option value="stackedColumn">Stacked Column</option>
+                            <option value="bar">Bar</option>
+                            <option value="stackedBar">Stacked Bar</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="data-input" class="widget">
+            <div class="widget-header">
+                <h3>Data input</h3>
+                <div class="one-liner">
+                    <label class="prism-button gap-100 prism-button--secondary prism-button--medium"
+                        style="cursor:pointer;">
+                        <span class="prism-icon prism-icon--small prism-icon--inherit">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" alt="Icon for upload"><path d="M12.0001 22C12.5524 22 13.0001 21.5523 13.0001 21L13.0001 9.82997L16.2947 13.1163C16.6844 13.5051 17.3154 13.5047 17.7047 13.1154C18.0943 12.7258 18.0943 12.0941 17.7047 11.7045L12.7072 6.70708C12.3167 6.31656 11.6835 6.31656 11.293 6.70708L6.29553 11.7045C5.90593 12.0941 5.90593 12.7258 6.29553 13.1154C6.68479 13.5047 7.31579 13.5051 7.70553 13.1163L11.0001 9.82997L11.0001 21C11.0001 21.5523 11.4478 22 12.0001 22Z"></path><path d="M18.0001 2.99997C18.0001 3.55225 17.5524 3.99997 17.0001 3.99997L7.00012 3.99997C6.44784 3.99997 6.00012 3.55226 6.00012 2.99997C6.00012 2.44769 6.44784 1.99997 7.00012 1.99997L17.0001 1.99997C17.5524 1.99997 18.0001 2.44768 18.0001 2.99997Z"></path></svg>
+                        </span>
+                        Import CSV
+                        <input type="file" id="csvUpload" accept=".csv" style="display:none;">
+                    </label>
+                    <button id="addSeriesBtn" class="prism-button gap-100 prism-button--secondary prism-button--medium"
+                        data-test-pseudo="" type="button">
+                        <span class="prism-icon prism-icon--small prism-icon--inherit">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" alt="Icon for plus">
+                                <path
+                                    d="M19 12C19 12.5523 18.5523 13 18 13H13V18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18V13H6C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11H11V6C11 5.44772 11.4477 5 12 5C12.5523 5 13 5.44772 13 6V11H18C18.5523 11 19 11.44772 19 12Z">
+                            </svg>
+                        </span>
+                        Add Series
+                    </button>
+                </div>
+            </div>
+            <div id="manual-input" class="widget-body">
+                <div id="seriesGrid" class="series-grid body">
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div id="main">
+        <div class="chart-preview">
+            <div id="chartContainer"></div>
+        </div>
+    </div>
+
+    <!-- Series card template — edit this markup to change the card layout -->
+    <template id="series-card-template">
+        <div class="series-card" draggable="true">
+            <div class="one-liner">
+                <div class="prism-input prism-input--no-padding">
+                    <div class="prism-input__wrapper">
+                        <input class="text-300--regular" type="text" placeholder="Series Name" data-field="name" />
+                    </div>
+                </div>
+                <button class="prism-button gap-100 prism-button--ghost prism-button--medium prism-button--icon-only delete-btn"
+                    type="button" data-action="delete">
+                    <span class="prism-icon prism-icon--small prism-icon--inherit">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9 2L15 2C16.103 2 17 2.897 17 4L17 5L20 5C20.5523 5 21 5.44771 21 6C21 6.55228 20.5523 7 20 7L18.5 7L5.5 7L4 7C3.44772 7 3 6.55228 3 6C3 5.44772 3.44772 5 4 5L7 5L7 4C7 2.897 7.897 2 9 2ZM5.5 8L5.5 20C5.5 21.103 6.397 22 7.5 22L16.5 22C17.603 22 18.5 21.103 18.5 20L18.5 8L5.5 8ZM15 4L9 4L9 5L15 5L15 4Z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="one-liner">
+                <div class="prism-input prism-input--no-padding">
+                    <div class="prism-input__wrapper customSelect">
+                        <select data-field="type"></select>
+                    </div>
+                </div>
+                <div class="prism-input prism-input--no-padding">
+                    <div class="prism-input__wrapper customSelect">
+                        <select data-field="color"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="prism-input prism-input--no-padding">
+                <div class="prism-input__wrapper">
+                    <textarea placeholder="1, 2, 3, ..." data-field="data"></textarea>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</body>
+
+</html>
